@@ -1,0 +1,220 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'Monaco';
+    src: url('/fonts/monaco.eot');
+    src: url('/fonts/monaco.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/monaco.woff') format('woff'),
+    url('/fonts/monaco.ttf') format('truetype'),
+    url('/fonts/monaco.svg#monaco') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: url(/images/bg.png) repeat;
+    font-family: Monaco, monospace;
+    font-size: 13px;
+    line-height: 20px;
+    color: #c80014;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+a {
+    color: #004173;
+    -moz-transition: color 1s;
+    -webkit-transition: color 1s;
+    -o-transition: color 1s;
+    -ms-transition: color 1s;
+    transition: color 1s;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c80014;
+    -moz-transition-property: color;
+    -moz-transition-duration: 1s;
+    -webkit-transition-property: color;
+    -webkit-transition-duration: 1s;
+    -o-transition-property: color;
+    -o-transition-duration: 1s;
+    -ms-transition-property: color;
+    -ms-transition-duration: 1s;
+    transition-property: color;
+    transition-duration: 1s;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: normal;
+    color: #c80014;
+    font-weight: normal;
+    text-indent: 1px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+section:first-child h2 {
+    border-bottom: solid 1px #004173;
+    margin: 0 0 16px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #004173;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+#wrapper {
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 32px;
+}
+
+#top {
+    overflow: hidden;
+    border-bottom: solid 1px #004173;
+    margin: 0 0 22px;
+}
+
+#top h1 {
+    background: url(/images/logo.png) no-repeat;
+    height: 161px;
+    margin: 120px auto 59px;
+    width: 980px;
+}
+
+#top h1 a {
+    display: block;
+    height: 161px;
+    overflow: hidden;
+    text-indent: -1000em;
+}
+
+#content {
+    overflow: hidden;
+    width: 980px;
+    margin: 0 auto;
+}
+
+#content div.column-left {
+    width: 300px;
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+#content div.column-right {
+    overflow: hidden;
+}
+
+#portfolio h2 {
+    margin-bottom: 11px;
+}
+
+#portfolio .portfolio {
+    overflow: hidden;
+    margin: 0 0 0 -30px;
+}
+
+#portfolio .portfolio li {
+    float: left;
+    width: 198px;
+    margin: 0 0 11px 30px;
+    padding: 1px;
+}
+
+#portfolio .portfolio a {
+    display: block;
+    font-size: 14px;
+    padding-bottom: 7px;
+    -moz-transition: border 1s, color 1s;
+    -webkit-transition: border 1s, color 1s;
+    -o-transition: border 1s, color 1s;
+    -ms-transition: border 1s, color 1s;
+    transition: border 1s, color 1s;
+    border-bottom: solid 1px #c80014;
+}
+
+#portfolio .portfolio a:hover {
+    -moz-transition: border 1s, color 1s;
+    -webkit-transition: border 1s, color 1s;
+    -o-transition: border 1s, color 1s;
+    -ms-transition: border 1s, color 1s;
+    transition: border 1s, color 1s;
+    border-bottom: solid 1px #004173;
+}
+
+#portfolio .portfolio strong {
+    font-size: 18px;
+    margin-bottom: -4px;
+}
+
+#portfolio .portfolio strong,
+#portfolio .portfolio cite {
+    display: block;
+    text-ellipsis: ellipsis;
+    overflow: hidden;
+    line-height: normal;
+}
+
+#footer {
+    border-top: solid 1px #004173;
+    padding: 27px 0;
+    margin: 11px 0 0;
+}
+
+#footer p {
+    width: 980px;
+    margin: 0 auto;
+}

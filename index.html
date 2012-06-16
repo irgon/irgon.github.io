@@ -1,0 +1,16 @@
+---
+layout: default
+title: IRGON SYSTEM
+---
+
+                <section id="portfolio">
+                    <h2>Portfolio</h2>
+                    <ul class="portfolio">{% for post in site.posts %}
+                        <li>
+                            <a href="{{ post.url }}">
+                                <strong>{{ post.title }}</strong>
+                                <cite>{{ post.cite }}</cite>
+                            </a>
+                        </li>{% endfor %}
+                    </ul>
+                </section>
