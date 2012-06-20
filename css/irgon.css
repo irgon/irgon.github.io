@@ -65,26 +65,41 @@ body {
 
 a {
     color: #004173;
-    -moz-transition: color 1s;
-    -webkit-transition: color 1s;
-    -o-transition: color 1s;
-    -ms-transition: color 1s;
-    transition: color 1s;
+    -moz-transition: border 1s;
+    -webkit-transition: border 1s;
+    -o-transition: border 1s;
+    -ms-transition: border 1s;
+    transition: border 1s;
+    border-bottom: solid 1px transparent;
     text-decoration: none;
 }
 
 a:hover {
-    color: #c80014;
-    -moz-transition-property: color;
-    -moz-transition-duration: 1s;
-    -webkit-transition-property: color;
-    -webkit-transition-duration: 1s;
-    -o-transition-property: color;
-    -o-transition-duration: 1s;
-    -ms-transition-property: color;
-    -ms-transition-duration: 1s;
-    transition-property: color;
-    transition-duration: 1s;
+    -moz-transition: border 1s;
+    -webkit-transition: border 1s;
+    -o-transition: border 1s;
+    -ms-transition: border 1s;
+    transition: border 1s;
+    border-bottom: solid 1px #c80014;
+}
+
+abbr {
+    cursor: help;
+    -moz-transition: border 1s;
+    -webkit-transition: border 1s;
+    -o-transition: border 1s;
+    -ms-transition: border 1s;
+    transition: border 1s;
+    border-bottom: dotted 1px;
+}
+
+a:hover abbr {
+    -moz-transition: border 1s;
+    -webkit-transition: border 1s;
+    -o-transition: border 1s;
+    -ms-transition: border 1s;
+    transition: border 1s;
+    border-bottom: dotted 1px transparent;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -106,6 +121,11 @@ section:first-child h2 {
 h3 {
     font-size: 24px;
     color: #004173;
+    margin-bottom: 8px;
+}
+
+h3 cite {
+    font-size: 18px;
 }
 
 h4 {
@@ -115,6 +135,90 @@ h4 {
 p {
     margin-bottom: 16px;
 }
+
+.arrows {
+    float: right;
+    margin: 10px 0 0;
+}
+
+.arrows > * {
+    float: left;
+}
+
+.arrows cite {
+    display: none;
+    line-height: 14px;
+    width: 150px;
+    text-align: right;
+}
+
+.arrows:hover cite {
+    display: block;
+}
+
+.arrows li {
+    float: left;
+    margin: 0 0 0 7px;
+}
+
+.arrows li a {
+    display: block;
+    text-indent: -1000em;
+    width: 60px;
+    height: 26px;
+    border: solid 1px #c80014;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+    color: #004173;
+    float: left;
+    text-align: center;
+    line-height: 26px;
+}
+
+.arrows li a:hover {
+    text-indent: 0;
+    background: none;
+}
+
+.technologies {
+    border-bottom: solid 1px #004173;
+    padding: 3px 2px 6px;
+    margin: 0 0 16px;
+}
+
+.technologies li {
+    display: inline;
+    font-size: 16px;
+}
+
+.technologies li[class] {
+    font-size: 13px;
+}
+
+.technologies li:after {
+    content: ", ";
+}
+
+.technologies li[class]:after {
+    content: "";
+}
+
+.technologies li[class]:before {
+    font-size: 13px;
+    content: " / ";
+}
+
+.technologies li.last,
+.technologies li.last:before,
+.technologies li.last:after {
+    font-size: 16px;
+    content: "";
+}
+
+;
 
 #wrapper {
     margin: 0 auto;
@@ -140,6 +244,11 @@ p {
     height: 161px;
     overflow: hidden;
     text-indent: -1000em;
+    border: none;
+}
+
+#top h1 a:hover {
+    border: none;
 }
 
 #content {
@@ -162,19 +271,23 @@ p {
     margin-bottom: 11px;
 }
 
-#portfolio .portfolio {
+#portfolio .arrows + h2 {
+    margin-bottom: 25px;
+}
+
+#portfolio ul.portfolio {
     overflow: hidden;
     margin: 0 0 0 -30px;
 }
 
-#portfolio .portfolio li {
+#portfolio ul.portfolio li {
     float: left;
     width: 198px;
     margin: 0 0 11px 30px;
     padding: 1px;
 }
 
-#portfolio .portfolio a {
+#portfolio ul.portfolio a {
     display: block;
     font-size: 14px;
     padding-bottom: 7px;
@@ -186,7 +299,7 @@ p {
     border-bottom: solid 1px #c80014;
 }
 
-#portfolio .portfolio a:hover {
+#portfolio ul.portfolio a:hover {
     -moz-transition: border 1s, color 1s;
     -webkit-transition: border 1s, color 1s;
     -o-transition: border 1s, color 1s;
@@ -195,17 +308,22 @@ p {
     border-bottom: solid 1px #004173;
 }
 
-#portfolio .portfolio strong {
+#portfolio ul.portfolio strong {
     font-size: 18px;
     margin-bottom: -4px;
 }
 
-#portfolio .portfolio strong,
-#portfolio .portfolio cite {
+#portfolio ul.portfolio strong,
+#portfolio ul.portfolio cite {
     display: block;
-    text-ellipsis: ellipsis;
+    text-overflow: ellipsis;
     overflow: hidden;
     line-height: normal;
+    white-space: nowrap;
+}
+
+#portfolio.list .arrows {
+    display: none;
 }
 
 #footer {
@@ -217,4 +335,18 @@ p {
 #footer p {
     width: 980px;
     margin: 0 auto;
+}
+
+/* translations */
+.translate {
+    display: none;
+}
+
+html[lang="en-US"] .translate-en,
+html[lang="pl-PL"] .translate-pl {
+    display: block;
+}
+
+.no-js div.portfolio {
+    display: none;
 }

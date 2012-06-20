@@ -3,7 +3,7 @@ layout: default
 title: IRGON SYSTEM
 ---
 
-                <section id="portfolio">
+                <section id="portfolio" class="list">{% include arrows.html %}
                     <h2>Portfolio</h2>
                     <ul class="portfolio">{% for post in site.posts %}
                         <li>
@@ -13,4 +13,11 @@ title: IRGON SYSTEM
                             </a>
                         </li>{% endfor %}
                     </ul>
+                    <div class="portfolio">
+                        <h3></h3>
+                        <p class="translate translate-en"></p>
+                        <p class="translate translate-pl"></p>
+                        <ul class="technologies">
+                        </ul>
+                    </div>
                 </section>
