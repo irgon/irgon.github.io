@@ -161,6 +161,7 @@
             for(lang in postData.description) {
                 this.postContainer.find('.translate-' + lang).html(postData.description[lang]);
             }
+            this.postContainer.find('img.preview').attr('src', '/images/posts/' + postData.id + '.png');
             technologiesContainer.empty();
             for(tech in postData.technologies) {
                 technologyVersion = postData.technologies[tech];

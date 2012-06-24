@@ -4,9 +4,12 @@
 * ~~prev/next dynamic support~~
 * ~~cache fetched posts~~
 * ~~preview functionality~~
-* post images
+* ~~post images~~
 * ~~loading screen~~
 * some lightbox for _blank images
 * static translations (?)
 * ~~move previews to separate git repositories~~
 * ~~view source shortcut redirects to github source~~
+* optimize image files
+* make it working with disabled JS
+* add loading indicator in preview

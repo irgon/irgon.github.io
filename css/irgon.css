@@ -293,10 +293,14 @@ p {
     margin-bottom: 25px;
 }
 
+#portfolio .portfolio {
+    padding: 0 0 16px;
+    border-bottom: solid 1px #004173;
+}
+
 #portfolio ul.portfolio {
     overflow: hidden;
     margin: 0 0 0 -30px;
-
 }
 
 #portfolio ul.portfolio li {
@@ -345,6 +349,12 @@ p {
     display: none;
 }
 
+img.preview {
+    width: 660px;
+    display: block;
+    vertical-align: top;
+}
+
 body.loading .portfolio {
     opacity: 0.5;
     background: url(/images/loading.gif) no-repeat;
@@ -374,4 +384,8 @@ html[lang="pl-PL"] .translate-pl {
 
 .no-js div.portfolio {
     display: none;
+}
+
+.no-js div.post {
+    display: block;
 }

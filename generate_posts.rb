@@ -43,15 +43,18 @@ cite: #{json['cite']}
 #{i > 0 ? 'prevlink: /' + jsons[i-1]['date'].split('-').join('/') + '/' + jsons[i-1]['id'] + '.html' + 10.chr : ''}#{jsons[i+1] ? 'nextlink: /' + jsons[i+1]['date'].split('-').join('/') + '/' + jsons[i+1]['id'] + '.html' + 10.chr : ''}---
 
                 <section id="portfolio">{% include arrows.html %}
-                    <h2>Portfolio</h2>
-                    <h3>#{json['title']} <cite>#{json['cite']}</cite></h3>
-                    <p class="translate translate-en">#{json['description']['en']}</p>
-                    <p class="translate translate-pl">#{json['description']['pl']}</p>
-                    <ul class="technologies">
-#{json['technologies'].collect.with_index {|t, i| '                        <li' + (i + 1 == t_size ? ' class="last"' : '') + '>' + (TECH[t[0].to_s][1] ? '<abbr title="' + TECH[t[0].to_s][1] + '">' : '') + TECH[t[0].to_s][0] + (TECH[t[0].to_s][1] ? '</abbr>' : '') + (t[1] ? ' ' + t[1].to_s : '') + '</li>'}.join(10.chr)}
-                        <li class="date"><span class="#{MONTHS[date[1]].downcase}">#{MONTHS[date[1]]}</span> #{date[0]}</li>
-#{json['preview'] ? '                        <li class="preview"><a href="/' + json['id'] + '/">See preview</a></li>' + 10.chr : ''}                    </ul>
-#{json['online'] ? '                        <li class="online"><a href="' + json['url'] + '">See online</a></li>' + 10.chr : ''}                    </ul>
+                    <div class="portfolio post">
+                        <h2>Portfolio</h2>
+                        <h3>#{json['title']} <cite>#{json['cite']}</cite></h3>
+                        <p class="translate translate-en">#{json['description']['en']}</p>
+                        <p class="translate translate-pl">#{json['description']['pl']}</p>
+                        <ul class="technologies">
+#{json['technologies'].collect.with_index {|t, i| '                            <li' + (i + 1 == t_size ? ' class="last"' : '') + '>' + (TECH[t[0].to_s][1] ? '<abbr title="' + TECH[t[0].to_s][1] + '">' : '') + TECH[t[0].to_s][0] + (TECH[t[0].to_s][1] ? '</abbr>' : '') + (t[1] ? ' ' + t[1].to_s : '') + '</li>'}.join(10.chr)}
+                            <li class="date"><span class="#{MONTHS[date[1]].downcase}">#{MONTHS[date[1]]}</span> #{date[0]}</li>
+#{json['preview'] ? '                            <li class="preview"><a href="/' + json['id'] + '/">See preview</a></li>' + 10.chr : ''}
+#{json['online'] ? '                            <li class="online"><a href="' + json['url'] + '">See online</a></li>' + 10.chr : ''}                        </ul>
+                        <img src="/images/posts/#{json['id']}.png" alt="" class="preview" />
+                    </div>
                 </section>
 EOF
 )
