@@ -1,8 +1,8 @@
 {
     "en": {
         "#me > h2": "Hello",
-        "#me > p:eq(0)": "My name is Igor&nbsp;Rzegocki, and I am a&nbsp;<b>29</b>&nbsp;year-old <a href=\"/images/wdvswd.png\" target=\"_blank\">Web Developer</a> currently living in&nbsp;<a href=\"/images/krkpl.jpg\" target=\"_blank\">Cracov, Poland</a>.",
-        "#me > p:eq(1)": "I&nbsp;own my&nbsp;own, small <a href=\"/images/awanpmjadb.jpg\" target=\"_blank\">web agency</a> and&nbsp;I&nbsp;work for <a href=\"http://www.xhtmlized.com/\" target=\"_blank\">XHTMLized</a>.",
+        "#me > p:eq(0)": "My name is Igor&nbsp;Rzegocki, and I am a&nbsp;<b>29</b>&nbsp;year-old Web Developer currently living in&nbsp;<a href=\"http://goo.gl/maps/cPpl\" target=\"_blank\">Cracov, Poland</a>.",
+        "#me > p:eq(1)": "I&nbsp;own my&nbsp;own, small web agency and&nbsp;I&nbsp;work for <a href=\"http://www.xhtmlized.com/\" target=\"_blank\">XHTMLized</a>.",
         "#me > p:eq(2)": "I&nbsp;graduated <a href=\"http://www.agh.edu.pl/en\" target=\"_blank\">AGH University of&nbsp;Science and Technology</a> on&nbsp;<a href=\"http://www.kt.agh.edu.pl/\" target=\"_blank\">Department of&nbsp;Telecommunications</a> and&nbsp;achieved a&nbsp;MSC.",
         "#skill > h2": "My skills",
         "#skill > p:eq(0)": "and&nbsp;interests are wide, but at&nbsp;the&nbsp;moment I&#039;m concentrated on server-<wbr>side technologies, more exactly on&nbsp;<a href=\"http://www.ruby-lang.org/en/\" target=\"_blank\">Ruby</a> and&nbsp;its&nbsp;excellent framework <a href=\"http://www.rubyonrails.org/\" target=\"_blank\">Ruby on&nbsp;Rails</a>.",
@@ -28,8 +28,8 @@
     },
     "pl": {
         "#me > h2": "Witaj",
-        "#me > p:eq(0)": "Nazywam się Igor&nbsp;Rzegocki i&nbsp;jestem <b>29</b>&nbsp;letnim <a href=\"/images/wdvswd.png\" target=\"_blank\">Web Developerem</a> obecnie mieszkającym w&nbsp;<a href=\"/images/krkpl.jpg\" target=\"_blank\">Krakowie</a>.",
-        "#me > p:eq(1)": "Zarządzam swoją małą <a href=\"/images/awanpmjadb.jpg\" target=\"_blank\">firmą</a> oraz&nbsp;pracuję dla&nbsp;<a href=\"http://www.xhtmlized.com/\" target=\"_blank\">XHTMLized</a>.",
+        "#me > p:eq(0)": "Nazywam się Igor&nbsp;Rzegocki i&nbsp;jestem <b>29</b>&nbsp;letnim Web Developerem obecnie mieszkającym w&nbsp;<a href=\"http://goo.gl/maps/cPpl\" target=\"_blank\">Krakowie</a>.",
+        "#me > p:eq(1)": "Zarządzam swoją małą firmą oraz&nbsp;pracuję dla&nbsp;<a href=\"http://www.xhtmlized.com/\" target=\"_blank\">XHTMLized</a>.",
         "#me > p:eq(2)": "Ukończyłem <a href=\"http://www.agh.edu.pl/\" target=\"_blank\">Akademię&nbsp;Górniczo-Hutniczą</a> na&nbsp;<a href=\"http://www.kt.agh.edu.pl/index.html.pl\" target=\"_blank\">Katedrze Telekomunikacji</a> i&nbsp;uzyskałem tytuł mgr&nbsp;inż.",
         "#skill > h2": "Potrafię",
         "#skill > p:eq(0)": "i&nbsp;interesuje się wieloma rzeczami, ale w&nbsp;tej chwili koncetruję się na&nbsp;technologiach serwerowych, a dokładniej na&nbsp;<a href=\"http://www.ruby-lang.org/pl/\" target=\"_blank\">Rubym</a> oraz&nbsp;jego świetnym frameworku <a href=\"http://www.rubyonrails.org/\" target=\"_blank\">Ruby on&nbsp;Rails</a>.",

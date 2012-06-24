@@ -1,6 +1,23 @@
+/*jslint browser: true, white: true */
+/*properties
+    '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12',
+    CODES, MONTHS, TECH, addClass, ajax, append, arrowsContainer, attr, call,
+    charCode, cite, click, css, currentPost, dataType, date, description, empty,
+    en, fadeIn, fadeOut, fetchPost, find, hasOwnProperty, hide, href, html, id,
+    imagesLoaded, indexOf, init, is, js, keyCode, keypress, list, listContainer,
+    location, map, mysql, online, parent, php, pl, postCache, postContainer,
+    preventDefault, preview, ready, removeClass, replace, show, showList,
+    showNextPost, showPost, showPreviousPost, split, success, technologies,
+    title, toLowerCase, translate, url, xhtml
+*/
+
+var jQuery = typeof(jQuery) === 'undefined' ? null : jQuery;
+
 (function($) {
 
-    Translator = {
+    "use strict";
+
+    var Translator = {
         CODES: {
             'en': 'en-US',
             'pl': 'pl-PL'
@@ -22,14 +39,14 @@
             var translations = this.map[lang], selector;
             if(translations) {
                 for(selector in translations) {
-                    $(selector).html(translations[selector]);
+                    if(translations.hasOwnProperty(selector)) {
+                        $(selector).html(translations[selector]);
+                    }
                 }
             }
             $('html').attr('lang', this.CODES[lang]);
         }
-
-    }
-
+    },
     Portfolio = {
         TECH: {
             'xhtml': ['XHTML', 'eXtensible HyperText Markup Language'],
@@ -72,24 +89,24 @@
             });
 
             $('> li > a', this.listContainer).click(function(e) {
-                var postId = $(this).attr('href').replace(/^.*\//, '').replace(/\.html$/, '');
+                var postId = $(this).attr('href').replace(/^[a-zA-Z0-9_\-\/]*\//, '').replace(/\.html$/, '');
                 e.preventDefault();
                 self.fetchPost(postId);
             });
             $('.list a', this.arrowsContainer).click(function(e) {
                 e.preventDefault();
                 self.showList();
-            })
+            });
             $('.prev a', this.arrowsContainer).click(function(e) {
                 e.preventDefault();
                 self.showPreviousPost();
-            })
+            });
             $('.next a', this.arrowsContainer).click(function(e) {
                 e.preventDefault();
                 self.showNextPost();
-            })
+            });
             $(document).keypress(function(e) {
-                var previousPostId, nextPostId, lastPost;
+                var lastPost;
                 if(e.keyCode === 0 && e.charCode === 117) {
                     e.preventDefault();
                     window.location.href = 'https://github.com/irgon/irgon.github.com/';
@@ -105,10 +122,10 @@
                             if(self.postContainer.is(':visible')) {
                                 self.showList();
                             } else {
-                                lastPost = self.currentPost ? self.currentPost : self.list[0];
+                                lastPost = self.currentPost || self.list[0];
                                 self.fetchPost(lastPost);
                             }
-                            break
+                            break;
                         case 39:
                             e.preventDefault();
                             self.showNextPost();
@@ -170,13 +187,17 @@
             }
             this.postContainer.find('h3').html(postData.title + ' <cite>' + postData.cite + '</cite>');
             for(lang in postData.description) {
-                this.postContainer.find('.translate-' + lang).html(postData.description[lang]);
+                if(postData.description.hasOwnProperty(lang)) {
+                    this.postContainer.find('.translate-' + lang).html(postData.description[lang]);
+                }
             }
             this.postContainer.find('img.preview').attr('src', '/images/posts/' + postData.id + '.png');
             technologiesContainer.empty();
             for(tech in postData.technologies) {
-                technologyVersion = postData.technologies[tech];
-                technologiesContainer.append($('<li><abbr title="' + this.TECH[tech][1] + '">' + this.TECH[tech][0] + (technologyVersion ? ' ' + technologyVersion : '') + '</abbr></li>'));
+                if(postData.technologies.hasOwnProperty(tech)) {
+                    technologyVersion = postData.technologies[tech];
+                    technologiesContainer.append($('<li><abbr title="' + this.TECH[tech][1] + '">' + this.TECH[tech][0] + (technologyVersion ? ' ' + technologyVersion : '') + '</abbr></li>'));
+                }
             }
             $('li:last', technologiesContainer).addClass('last');
             technologiesContainer.append($('<li class="date"><span class="' + this.MONTHS[date[1]].toLowerCase() + '">' + this.MONTHS[date[1]] + '</span> ' + date[0] + '</li>'));
@@ -192,11 +213,11 @@
             this.postContainer.show();
             this.listContainer.hide();
         }
-    }
+    };
 
     $(document).ready(function() {
         Translator.init();
         Portfolio.init();
     });
 
-}(jQuery))
+}(jQuery));

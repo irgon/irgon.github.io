@@ -1,4 +1,15 @@
+/*jslint browser: true, white: true */
+/*properties
+    addClass, animate, attr, bind, charCode, click, height, href, is, keyCode,
+    keypress, location, marginTop, outerHeight, parent, preventDefault, ready,
+    removeClass, resize, siblings, slideDown, step, text, toString, width
+*/
+
+var jQuery = typeof(jQuery) === 'undefined' ? null : jQuery;
+
 (function($) {
+
+    "use strict";
 
     $(document).ready(function() {
         var expanded = false,
@@ -8,11 +19,11 @@
             menu_height = $('#menu').outerHeight(true),
             fixWindow = function() {
                 var window_height = $(this).height();
-                $('#wrapper').height(window_height - footer_height)
+                $('#wrapper').height(window_height - footer_height);
                 $('#content').height(window_height - header.outerHeight(true) - footer_height - menu_height);
                 $('#renderedPage').width($('#content').width());
                 $('#renderedPage').height($('#content').height());
-            }
+            };
 
         $(window).resize(fixWindow);
         fixWindow();
@@ -41,7 +52,7 @@
                     step: function() {
                         fixWindow();
                     }
-                })
+                });
                 $(this).text('Expand');
                 expanded = false;
             } else {
@@ -51,7 +62,7 @@
                     step: function() {
                         fixWindow();
                     }
-                })
+                });
                 $(this).text('Contract');
                 expanded = true;
             }
