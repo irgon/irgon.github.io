@@ -22,18 +22,34 @@ var jQuery = typeof(jQuery) === 'undefined' ? null : jQuery;
             'en': 'en-US',
             'pl': 'pl-PL'
         },
+        BACKCODES: {
+            'en-US': 'en',
+            'pl-PL': 'pl'
+        },
         map: {},
+        currentLanguage: null,
         init: function() {
             var self = this;
-            $('body').addClass('loading');
+            this.currentLanguage = (document.cookie.match(/language=([a-z]{2})/) ? document.cookie.match(/language=([a-z]{2})/)[1] : null) || this.BACKCODES[$('html').attr('lang')];
+            $('body').addClass('loading').addClass('loading-lang');
             $.ajax({
                 url: '/js/translations.json',
                 dataType: 'json',
                 success: function(response) {
                     self.map = response;
-                    $('body').removeClass('loading');
+                    self.translate(self.currentLanguage);
+                    $('body').removeClass('loading').removeClass('loading-lang');
                 }
             });
+            $('#languages a').click(function(e) {
+                e.preventDefault();
+                self.setCurrentLanguage($(this).data('lang'));
+                self.translate(self.currentLanguage);
+            });
+        },
+        setCurrentLanguage: function(lang) {
+            this.currentLanguage = lang;
+            document.cookie = 'language=' + lang;
         },
         translate: function(lang) {
             var translations = this.map[lang], selector;
@@ -210,6 +226,7 @@ var jQuery = typeof(jQuery) === 'undefined' ? null : jQuery;
             this.arrowsContainer.fadeIn(1000, function() {
                 $(this).parent().removeClass('list');
             });
+            Translator.translate(Translator.currentLanguage);
             this.postContainer.show();
             this.listContainer.hide();
         }

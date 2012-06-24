@@ -6,7 +6,6 @@
 * ~~preview functionality~~
 * ~~post images~~
 * ~~loading screen~~
-* static translations (?)
 * ~~move previews to separate git repositories~~
 * ~~view source shortcut redirects to github source~~
 * ~~optimize image files~~

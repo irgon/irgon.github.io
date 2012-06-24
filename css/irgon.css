@@ -245,7 +245,6 @@ p {
 #top {
     overflow: hidden;
     border-bottom: solid 1px #004173;
-    margin: 0 0 22px;
 }
 
 #top h1 {
@@ -267,10 +266,22 @@ p {
     border: none;
 }
 
+#languages {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#languages li {
+    display: inline;
+}
+
 #content {
     overflow: hidden;
     width: 980px;
     margin: 0 auto;
+    padding: 22px 0 0;
+    position: relative;
 }
 
 #content div.column-left {
@@ -367,6 +378,10 @@ body.loading .portfolio {
     background-position: right bottom;
 }
 
+body.loading-lang #content div.column-left {
+    visibility: hidden;
+}
+
 #footer {
     border-top: solid 1px #004173;
     padding: 27px 0;
@@ -388,6 +403,14 @@ html[lang="pl-PL"] .translate-pl {
     display: block;
 }
 
+html[lang="pl-PL"] .arrows cite {
+    width: 190px;
+}
+
 .no-js .arrows:hover cite {
+    display: none;
+}
+
+.no-js #languages {
     display: none;
 }
