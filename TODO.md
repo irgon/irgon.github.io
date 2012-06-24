@@ -1,9 +1,11 @@
 * ~~translations~~
 * ~~dynamic post loading~~
-* arrows images
-* prev/next dynamic support
+* ~~arrows images~~
+* ~~prev/next dynamic support~~
+* ~~cache fetched posts~~
+* ~~preview functionality~~
 * post images
-* transitions while switching list/post
-* loading screen
+* ~~loading screen~~
 * some lightbox for _blank images
 * static translations (?)
+* move previews to separate git repositories

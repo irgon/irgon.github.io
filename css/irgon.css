@@ -61,6 +61,11 @@ body {
     color: #c80014;
     text-transform: uppercase;
     letter-spacing: 0.3px;
+    cursor: default;
+}
+
+body.loading {
+    cursor: progress;
 }
 
 a {
@@ -176,6 +181,19 @@ p {
     float: left;
     text-align: center;
     line-height: 26px;
+    background: url(/images/arrows.png) no-repeat;
+}
+
+.arrows .prev a {
+    background-position: center 0px;
+}
+
+.arrows .list a {
+    background-position: center -28px;
+}
+
+.arrows .next a {
+    background-position: center -56px;
 }
 
 .arrows li a:hover {
@@ -278,6 +296,7 @@ p {
 #portfolio ul.portfolio {
     overflow: hidden;
     margin: 0 0 0 -30px;
+
 }
 
 #portfolio ul.portfolio li {
@@ -324,6 +343,12 @@ p {
 
 #portfolio.list .arrows {
     display: none;
+}
+
+body.loading .portfolio {
+    opacity: 0.5;
+    background: url(/images/loading.gif) no-repeat;
+    background-position: right bottom;
 }
 
 #footer {

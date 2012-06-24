@@ -1,0 +1,17 @@
+{
+    "id": "fotekapl",
+    "title": "Foteka.pl",
+    "cite": "Hosting Obrazków",
+    "description": {
+        "en": "Page, designed as fast and simple host for favorites photos/pictures.",
+        "pl": "Strona zaprojektowana, jako szybka i prosta aplikacja do przechowywania ulubionych zdjęć i obrazków."
+    },
+    "url": "http://www.foteka.pl/",
+    "technologies": {
+        "xhtml": 1.1,
+        "css": 2.1
+    },
+    "preview": true,
+    "online": false,
+    "date": "2007-03-15"
+}

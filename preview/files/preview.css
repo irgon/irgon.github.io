@@ -1,0 +1,265 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    color: #004173;
+    -moz-transition: color 1s;
+    -webkit-transition: color 1s;
+    -o-transition: color 1s;
+    -ms-transition: color 1s;
+    transition: color 1s;
+    border-bottom: solid 1px transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c80014;
+    -moz-transition: color 1s;
+    -webkit-transition: color 1s;
+    -o-transition: color 1s;
+    -ms-transition: color 1s;
+    transition: color 1s;
+}
+
+@font-face {
+    font-family: 'Monaco';
+    src: url('monaco.eot');
+    src: url('monaco.eot?#iefix') format('embedded-opentype'),
+    url('monaco.woff') format('woff'),
+    url('monaco.ttf') format('truetype'),
+    url('monaco.svg#monaco') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: url(bg.png) repeat;
+    font-family: Monaco, monospace;
+    font-size: 13px;
+    line-height: 20px;
+    color: #c80014;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    cursor: default;
+}
+
+#wrapper {
+    overflow: hidden;
+}
+
+#header {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+#header h1 {
+    font-size: 60px;
+    line-height: 120px;
+    float: left;
+}
+
+#menu {
+    border-top: solid 1px #004173;
+    display: block;
+    text-align: center;
+    padding: 5px 0;
+}
+
+#menu li {
+    display: inline;
+}
+
+#menu li a {
+    -moz-transition: border 1s, color 1s;
+    -webkit-transition: border 1s, color 1s;
+    -o-transition: border 1s, color 1s;
+    -ms-transition: border 1s, color 1s;
+    transition: border 1s, color 1s;
+    border-top: solid 3px #004173;
+    color: #c80014;
+    padding: 6px 12px;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+#menu li.selected a,
+#menu li a:hover {
+    -moz-transition: border 1s, color 1s;
+    -webkit-transition: border 1s, color 1s;
+    -o-transition: border 1s, color 1s;
+    -ms-transition: border 1s, color 1s;
+    transition: border 1s, color 1s;
+    border-top: solid 3px #c80014;
+    color: #004173;
+}
+
+#browsers {
+    float: right;
+    margin: 10px 0;
+}
+
+#browsers h2 {
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 11px;
+    border: solid 1px #004173;
+    color: #004173;
+}
+
+#browsers ul {
+    overflow: hidden;
+    border-left: solid 1px #004173;
+    border-bottom: solid 1px #004173;
+    list-style: none;
+}
+
+#browsers ul li {
+    width: 49px;
+    border-right: solid 1px #004173;
+    float: left;
+}
+
+#browsers ul li a {
+    text-indent: -1000em;
+    display: block;
+    height: 74px;
+    position: relative;
+    text-decoration: none;
+}
+
+#browsers ul li a var {
+    display: block;
+    padding: 53px 0 0 0;
+    height: 21px;
+    line-height: 21px;
+    text-align: center;
+    font-size: 9px;
+    text-indent: 0;
+    position: absolute;
+    bottom: 0;
+    width: 49px;
+    font-style: normal;
+    background-repeat: no-repeat;
+    background-position: center 6px;
+    left: 0;
+    -moz-transition: color 1s;
+    -webkit-transition: color 1s;
+    -o-transition: color 1s;
+    -ms-transition: color 1s;
+    transition: color 1s;
+    color: #c80014;
+}
+
+#browsers ul li a:hover,
+#browsers ul li a:hover var {
+    -moz-transition: color 1s;
+    -webkit-transition: color 1s;
+    -o-transition: color 1s;
+    -ms-transition: color 1s;
+    transition: color 1s;
+    color: #004173;
+}
+
+#browsers ul li.ie a var {
+    background-image: url(ie.png);
+}
+
+#browsers ul li.fx a var {
+    background-image: url(fx.png);
+}
+
+#browsers ul li.opera a var {
+    background-image: url(opera.png);
+}
+
+#browsers ul li.safari a var {
+    background-image: url(safari.png);
+}
+
+#browsers ul li.chrome a var {
+    background-image: url(chrome.png);
+}
+
+#content {
+    position: relative;
+    overflow: hidden;
+    background: url(loading.gif) no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+#content .show {
+    position: absolute;
+    top: -5px;
+    padding-top: 5px;
+    left: 50%;
+    margin-left: -40px;
+    background: url(bg.png) repeat;
+    cursor: pointer;
+    width: 80px;
+    text-align: center;
+    line-height: 22px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+
+}
+
+#footer {
+    border-top: solid 1px #444444;
+    text-align: center;
+}
+
+#footer p,
+#footer p a {
+    font-style: normal;
+    font-size: 11px;
+    text-decoration: none;
+}
+

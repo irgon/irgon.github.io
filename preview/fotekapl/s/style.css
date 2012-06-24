@@ -1,0 +1,436 @@
+html, body, h1, h2, h3, h4, h5, h6, p, ul, li, span, input, form, dl {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: #ffffff url(../img/bg.png) top left repeat-x;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #666666;
+}
+
+span.cleaner {
+    clear: both;
+    display: block;
+}
+
+a, a:visited {
+    color: #003399;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    font-family: "Trebuchet MS", Verdana, Geneva, Arial, Helvetica, sans-serif;
+    color: #828282;
+    font-size: 2.5em;
+    font-weight: normal;
+}
+
+#wrapper {
+    width: 823px;
+    margin: auto;
+    position: relative;
+    padding-top: 100px;
+}
+
+div.zoom {
+    padding-top: 0px !important;
+}
+
+#wrapper h1 {
+    width: 213px;
+    height: 64px;
+    position: absolute;
+    top: 53px;
+    left: 38px;
+    text-indent: -1000em;
+    background: url(../img/logo.png) top left no-repeat;
+}
+
+ul.menu {
+    overflow: hidden;
+    float: right;
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+ul.menu li {
+    float: left;
+    padding: 0px 15px 0px 39px;
+    background-position: center left;
+    min-height: 14px;
+    border-right: solid 1px #cccccc;
+    overflow: hidden;
+}
+
+ul.menu li.premium {
+    background: url(../img/menu-premium.png) no-repeat;
+}
+
+ul.menu li.terms {
+    background: url(../img/menu-terms.png) no-repeat;
+}
+
+ul.menu li.help {
+    background: url(../img/menu-help.png) no-repeat;
+    border-right: none;
+}
+
+div.content {
+    border: solid 1px #cccccc;
+    background: #f5f5f5;
+    position: relative;
+    width: 761px;
+    margin: auto;
+    padding: 30px;
+    line-height: 1.6em;
+    clear: both;
+}
+
+div.content div.ul,
+div.content div.ur,
+div.content div.dr,
+div.content div.dl {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+}
+
+#adverts {
+    width: 290px;
+    height: 270px;
+    border: solid 1px #cccccc;
+    float: right;
+}
+
+#adverts2 {
+    width: 730px;
+    height: 90px;
+    border: solid 1px #cccccc;
+    margin: 20px auto;
+}
+
+#adverts3 {
+    width: 370px;
+    height: 110px;
+    border: solid 1px #cccccc;
+    float: right;
+}
+
+div.content div.ul {
+    background: url(../img/corner-ul.png) top left no-repeat;
+    top: -1px;
+    left: -1px;
+}
+
+div.content div.ur {
+    background: url(../img/corner-ur.png) top left no-repeat;
+    top: -1px;
+    right: -1px;
+}
+
+div.content div.dr {
+    background: url(../img/corner-dr.png) top left no-repeat;
+    bottom: -1px;
+    right: -1px;
+}
+
+div.content div.dl {
+    background: url(../img/corner-dl.png) top left no-repeat;
+    bottom: -1px;
+    left: -1px;
+}
+
+div.content h2 {
+    padding: 5px 0px 5px 48px;
+    background: url(../img/add.png) no-repeat;
+    background-position: center left;
+    min-height: 28px;
+}
+
+div.content h2.picture {
+    background: url(../img/picture.png) no-repeat;
+}
+
+div.content p.addphoto {
+    padding: 20px;
+}
+
+div.content ul.uploadfile {
+    overflow: hidden;
+    margin: 0px 20px 0px 40px;
+    list-style: none;
+    line-height: 3.5em;
+    width: 350px;
+}
+
+div.content ul.uploadfile li.dash {
+    border-bottom: solid 1px #cccccc;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+div.content ul.uploadfile li label {
+    margin-right: 25px;
+}
+
+div.content ul.uploadfile li input.file {
+    width: 230px;
+}
+
+div.content ul.uploadfile li select {
+    width: 230px;
+    background: #ffffff;
+    border: solid 1px #cccccc;
+    margin-left: 10px;
+}
+
+span.submit {
+    display: block;
+    height: 29px;
+    padding-left: 15px;
+    background: url(../img/input-left.png) top left no-repeat;
+    line-height: normal;
+    float: right;
+    cursor: pointer;
+}
+
+span.submit input.submit {
+    background: url(../img/input-right.png) no-repeat;
+    background-position: top right;
+    padding-right: 15px;
+    height: 29px;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+#bigphoto {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#zoom div.smallpanel {
+    padding: 0px;
+}
+
+#zoom cite {
+    float: right;
+    display: block;
+    padding-left: 19px;
+    background: url(../img/warning.png) no-repeat;
+    background-position: center left;
+    font-style: normal;
+}
+
+#account h2,
+#premium h2 {
+    margin-bottom: 20px;
+    background-image: url(../img/user.png);
+}
+
+#premium dt {
+    font-weight: normal;
+}
+
+#premium dd {
+    clear: left;
+    margin-left: 15px;
+}
+
+#premium div.smallpanel {
+    background: none;
+}
+
+#premium div.left,
+#premium div.right {
+    width: 330px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#premium div.left {
+    padding-right: 35px;
+    border-right: solid 1px #cccccc;
+}
+
+#premium div.right {
+    padding-right: 20px;
+}
+
+#premium dd input {
+    width: 309px;
+}
+
+div.smallpanel {
+    padding: 0px 15px;
+    overflow: hidden;
+    background: url(../img/smallpanel.png) top left repeat-y;
+}
+
+div.smallpanel div.left,
+div.smallpanel div.right {
+    width: 350px;
+    padding-left: 15px;
+    float: left;
+    overflow: hidden;
+}
+
+div.smallpanel div.left {
+    padding-left: 0px;
+    padding-right: 15px;
+}
+
+div.smallpanel dl {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+div.smallpanel dt {
+    float: left;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+div.smallpanel input.text {
+    width: 250px;
+    border: solid 1px #cccccc;
+    padding: 2px;
+    color: #666666;
+}
+
+div.smallpanel h4 {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    background: url(../img/add-small.png) no-repeat;
+    background-position: center left;
+    min-height: 14px;
+}
+
+ul.miniphoto {
+    list-style: none;
+    margin-top: 27px;
+}
+
+ul.miniphoto li.image {
+    float: left;
+    margin: -7px 20px;
+    padding-top: 0px;
+}
+
+#links dl.first {
+    margin-top: 25px;
+}
+
+#links dl {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+#links dt {
+    float: right;
+    width: 190px;
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+#links dd {
+    margin-left: 25px;
+}
+
+#links dd input.text {
+    width: 520px;
+    padding: 2px;
+    border: solid 1px #cccccc;
+}
+
+ul.params li {
+    padding-left: 20px;
+    background-position: center left;
+    background-repeat: no-repeat;
+}
+
+ul.params li.photos {
+    background-image: url(../img/picture-small.png);
+}
+
+ul.params li.active {
+    background-image: url(../img/active-small.png);
+}
+
+ul.myphotos {
+    list-style: none;
+    overflow: hidden;
+    padding: 20px;
+}
+
+ul.myphotos li {
+    width: 100px;
+    padding: 10px;
+    margin-left: 7px;
+    float: left;
+    border: solid 1px transparent;
+}
+
+ul.myphotos li.selected {
+    background: #f5f5f5;
+    border: solid 1px #cccccc;
+}
+
+ul.myphotos li img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-bottom: 3px;
+}
+
+ul.myphotos li a {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: url(../img/trash.png) top left no-repeat;
+    float: right;
+}
+
+div.pagination {
+    border-bottom: solid 1px #cccccc;
+    overflow: hidden;
+    padding: 0px 35px 10px;
+}
+
+ul.pager {
+    float: right;
+    overflow: hidden;
+    list-style: none;
+}
+
+ul.pager li {
+    float: left;
+    margin-left: 3px;
+}
+
+ul.pager li a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: #cccccc solid 1px;
+    text-align: center;
+    line-height: 20px;
+}
+
+ul.pager li.selected a,
+ul.pager li a:hover {
+    background: #f5f5f5;
+    text-decoration: none;
+}
+
+div.footer {
+    clear: both;
+    padding: 15px;
+}

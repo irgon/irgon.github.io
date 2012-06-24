@@ -1,0 +1,9 @@
+#wrapper h1 {
+    background: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="img/logo.png", sizingMethod="crop");
+}
+
+div.content div.ur,
+div.content div.dr {
+    right: -2px;
+}
