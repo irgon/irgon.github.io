@@ -8,11 +8,13 @@
         map: {},
         init: function() {
             var self = this;
+            $('body').addClass('loading');
             $.ajax({
                 url: '/js/translations.json',
                 dataType: 'json',
                 success: function(response) {
                     self.map = response;
+                    $('body').removeClass('loading');
                 }
             });
         },
@@ -54,6 +56,8 @@
         currentPost: null,
         postCache: {},
         init: function() {
+            $('body').addClass('loading');
+
             this.arrowsContainer = $('#portfolio .arrows');
             this.listContainer = $('#portfolio ul.portfolio');
             this.postContainer = $('#portfolio div.portfolio');
@@ -112,7 +116,9 @@
 
                     }
                 }
-            })
+            });
+
+            $('body').removeClass('loading');
         },
         showList: function() {
             this.arrowsContainer.fadeOut(1000, function() {
@@ -134,6 +140,8 @@
             }
         },
         fetchPost: function(postId) {
+            $('body').addClass('loading');
+
             var self = this;
             if(this.postCache[postId]) {
                 this.showPost(this.postCache[postId]);
@@ -153,6 +161,9 @@
                 technologyVersion,
                 date = postData.date.split('-'),
                 technologiesContainer = $('.technologies', this.postContainer);
+            this.postContainer.imagesLoaded(function() {
+                $('body').removeClass('loading');
+            });
             this.currentPost = postData.id;
             if(!this.postCache[postData.id]) {
                 this.postCache[postData.id] = postData;
@@ -186,12 +197,6 @@
     $(document).ready(function() {
         Translator.init();
         Portfolio.init();
-
-        $('body').ajaxSend(function() {
-            $(this).addClass('loading');
-        }).ajaxComplete(function() {
-            $(this).removeClass('loading');
-        })
     });
 
 }(jQuery))

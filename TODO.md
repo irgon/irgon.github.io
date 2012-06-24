@@ -12,4 +12,6 @@
 * ~~view source shortcut redirects to github source~~
 * optimize image files
 * make it working with disabled JS
-* add loading indicator in preview
+* ~~add loading indicator in preview~~
+* validate js in jslint
+* check in all browsers
