@@ -18,13 +18,14 @@ var jQuery = typeof(jQuery) === 'undefined' ? null : jQuery;
             footer_height = $('#footer').outerHeight(true),
             menu_height = $('#menu').outerHeight(true),
             fixWindow = function() {
-                var window_height = $(this).height();
+                var window_height = $(window).height();
                 $('#wrapper').height(window_height - footer_height);
                 $('#content').height(window_height - header.outerHeight(true) - footer_height - menu_height);
                 $('#renderedPage').width($('#content').width());
                 $('#renderedPage').height($('#content').height());
             };
 
+        $('body').removeClass('no-js');
         $(window).resize(fixWindow);
         fixWindow();
 
@@ -36,10 +37,9 @@ var jQuery = typeof(jQuery) === 'undefined' ? null : jQuery;
         });
 
         $('#menu a').click(function(e) {
-            var attrib = $('#renderedPage').is('object') ? 'data' : 'src';
             e.preventDefault();
             $(this).parent().addClass('selected').siblings().removeClass('selected');
-            $('#renderedPage').attr(attrib, $(this).attr('href'));
+            $('#renderedPage').attr('src', $(this).attr('href'));
         });
 
         $('#content a.show').bind('click', function(e) {

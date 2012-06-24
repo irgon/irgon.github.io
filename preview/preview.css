@@ -263,3 +263,15 @@ body {
     text-decoration: none;
 }
 
+iframe {
+    width: 100%;
+    vertical-align: top;
+}
+
+.no-js a.show {
+    display: none;
+}
+
+.no-js iframe {
+    height: 425px;
+}

@@ -347,6 +347,14 @@ p {
     display: none;
 }
 
+#portfolio div.portfolio {
+    display: none;
+}
+
+#portfolio div.post {
+    display: block;
+}
+
 img.preview {
     width: 660px;
     display: block;
@@ -380,10 +388,6 @@ html[lang="pl-PL"] .translate-pl {
     display: block;
 }
 
-.no-js div.portfolio {
+.no-js .arrows:hover cite {
     display: none;
-}
-
-.no-js div.post {
-    display: block;
 }
