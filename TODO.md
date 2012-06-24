@@ -14,3 +14,4 @@
 * ~~validate js in jslint~~
 * check in all browsers
 * add accessibility improvements
+* add microformats

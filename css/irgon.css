@@ -54,7 +54,7 @@ table {
 }
 
 body {
-    background: url(/images/bg.png) repeat;
+    background: url(/images/bg_body.png) repeat;
     font-family: Monaco, monospace;
     font-size: 13px;
     line-height: 20px;
@@ -181,7 +181,7 @@ p {
     float: left;
     text-align: center;
     line-height: 26px;
-    background: url(/images/arrows.png) no-repeat;
+    background: url(/images/sprite_arrows.png) no-repeat;
 }
 
 .arrows .prev a {
@@ -248,7 +248,7 @@ p {
 }
 
 #top h1 {
-    background: url(/images/logo.png) no-repeat;
+    background: url(/images/logo_irgon.png) no-repeat;
     height: 161px;
     margin: 120px auto 59px;
     width: 980px;
@@ -374,7 +374,7 @@ img.preview {
 
 body.loading .portfolio {
     opacity: 0.5;
-    background: url(/images/loading.gif) no-repeat;
+    background: url(/images/misc_loading.gif) no-repeat;
     background-position: right bottom;
 }
 

@@ -1,15 +1,18 @@
 /*jslint browser: true, white: true */
 /*properties
     '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12',
-    CODES, MONTHS, TECH, addClass, ajax, append, arrowsContainer, attr, call,
-    charCode, cite, click, css, currentPost, dataType, date, description, empty,
-    en, fadeIn, fadeOut, fetchPost, find, hasOwnProperty, hide, href, html, id,
-    imagesLoaded, indexOf, init, is, js, keyCode, keypress, list, listContainer,
-    location, map, mysql, online, parent, php, pl, postCache, postContainer,
-    preventDefault, preview, ready, removeClass, replace, show, showList,
-    showNextPost, showPost, showPreviousPost, split, success, technologies,
-    title, toLowerCase, translate, url, xhtml
+    BACKCODES, CODES, MONTHS, TECH, addClass, ajax, append, arrowsContainer,
+    attr, call, charCode, cite, click, cookie, css, currentLanguage, currentPost,
+    data, dataType, date, description, empty, en, 'en-US', fadeIn, fadeOut,
+    fetchPost, find, hasOwnProperty, hide, href, html, id, imagesLoaded, indexOf,
+    init, is, js, keyCode, keypress, language, list, listContainer, location,
+    map, match, mysql, navigator, online, parent, php, pl, 'pl-PL', postCache,
+    postContainer, preventDefault, preview, ready, removeClass, replace,
+    setCurrentLanguage, show, showList, showNextPost, showPost, showPreviousPost,
+    split, success, technologies, title, toLowerCase, translate, url,
+    userLanguage, xhtml
 */
+
 
 var jQuery = typeof(jQuery) === 'undefined' ? null : jQuery;
 
@@ -30,7 +33,7 @@ var jQuery = typeof(jQuery) === 'undefined' ? null : jQuery;
         currentLanguage: null,
         init: function() {
             var self = this;
-            this.currentLanguage = (document.cookie.match(/language=([a-z]{2})/) ? document.cookie.match(/language=([a-z]{2})/)[1] : null) || this.BACKCODES[$('html').attr('lang')];
+            this.currentLanguage = (document.cookie.match(/language=([a-z]{2})/) ? document.cookie.match(/language=([a-z]{2})/)[1] : null) || this.BACKCODES[window.navigator.userLanguage] || this.BACKCODES[window.navigator.language] || this.BACKCODES[$('html').attr('lang')];
             $('body').addClass('loading').addClass('loading-lang');
             $.ajax({
                 url: '/js/translations.json',

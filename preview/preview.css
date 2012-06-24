@@ -74,7 +74,7 @@ a:hover {
 }
 
 body {
-    background: url(bg.png) repeat;
+    background: url(bg_body.png) repeat;
     font-family: Monaco, monospace;
     font-size: 13px;
     line-height: 20px;
@@ -192,6 +192,7 @@ body {
     -ms-transition: color 1s;
     transition: color 1s;
     color: #c80014;
+    background: url(sprite_browsers.png) no-repeat;
 }
 
 #browsers ul li a:hover,
@@ -205,29 +206,29 @@ body {
 }
 
 #browsers ul li.ie a var {
-    background-image: url(ie.png);
+    background-position: center 0;
 }
 
 #browsers ul li.fx a var {
-    background-image: url(fx.png);
+    background-position: center -75px;
 }
 
 #browsers ul li.opera a var {
-    background-image: url(opera.png);
+    background-position: center -150px;
 }
 
 #browsers ul li.safari a var {
-    background-image: url(safari.png);
+    background-position: center -225px;
 }
 
 #browsers ul li.chrome a var {
-    background-image: url(chrome.png);
+    background-position: center -300px;
 }
 
 #content {
     position: relative;
     overflow: hidden;
-    background: url(loading.gif) no-repeat;
+    background: url(misc_loading.gif) no-repeat;
     background-position: center;
     position: relative;
 }
@@ -238,7 +239,7 @@ body {
     padding-top: 5px;
     left: 50%;
     margin-left: -40px;
-    background: url(bg.png) repeat;
+    background: url(bg_body.png) repeat;
     cursor: pointer;
     width: 80px;
     text-align: center;
@@ -252,7 +253,7 @@ body {
 }
 
 #footer {
-    border-top: solid 1px #444444;
+    border-top: solid 1px #004173;
     text-align: center;
 }
 
