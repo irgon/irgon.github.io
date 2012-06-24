@@ -211,7 +211,7 @@ var jQuery = typeof(jQuery) === 'undefined' ? null : jQuery;
                     this.postContainer.find('.translate-' + lang).html(postData.description[lang]);
                 }
             }
-            this.postContainer.find('img.preview').attr('src', '/images/posts/' + postData.id + '.png');
+            this.postContainer.find('img.preview').attr('src', '/images/posts/' + postData.id + '.jpg');
             technologiesContainer.empty();
             for(tech in postData.technologies) {
                 if(postData.technologies.hasOwnProperty(tech)) {
