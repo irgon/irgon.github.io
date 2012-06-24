@@ -1,0 +1,17 @@
+{
+    "id": "gardenpartner",
+    "title": "Garden Partner",
+    "cite": "Prowadzenie ogrodów",
+    "description": {
+        "en": "Online presentation of a company providing gardening services.",
+        "pl": "Prezentacja online firmy zajmującej się prowadzeniem ogrodów."
+    },
+    "url": "http://gardenpartner.com.pl/",
+    "technologies": {
+        "html": 5,
+        "css": 3
+    },
+    "preview": true,
+    "online": true,
+    "date": "2012-04-17"
+}

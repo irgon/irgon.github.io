@@ -68,6 +68,7 @@ var jQuery = typeof(jQuery) === 'undefined' ? null : jQuery;
     },
     Portfolio = {
         TECH: {
+            'html':  ['HTML', 'HyperText Markup Language'],
             'xhtml': ['XHTML', 'eXtensible HyperText Markup Language'],
             'css':   ['CSS', 'Cascading Style Sheets'],
             'js':    ['JS', 'JavaScript'],

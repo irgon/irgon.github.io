@@ -1,6 +1,7 @@
 require 'json'
 
 TECH = {
+    'html'  => ['HTML', 'HyperText Markup Language'],
     'xhtml' => ['XHTML', 'eXtensible HyperText Markup Language'],
     'css'   => ['CSS', 'Cascading Style Sheets'],
     'js'    => ['JS', 'JavaScript'],
