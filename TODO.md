@@ -8,4 +8,4 @@
 * ~~loading screen~~
 * some lightbox for _blank images
 * static translations (?)
-* move previews to separate git repositories
+* ~~move previews to separate git repositories~~

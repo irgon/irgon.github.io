@@ -165,7 +165,7 @@
             $('li:last', technologiesContainer).addClass('last');
             technologiesContainer.append($('<li class="date"><span class="' + this.MONTHS[date[1]].toLowerCase() + '">' + this.MONTHS[date[1]] + '</span> ' + date[0] + '</li>'));
             if(postData.preview) {
-                technologiesContainer.append($('<li class="preview"><a href="/preview/' + postData.id + '/" target="_blank">See preview</a></li>'));
+                technologiesContainer.append($('<li class="preview"><a href="/' + postData.id + '/" target="_blank">See preview</a></li>'));
             }
             if(postData.online) {
                 technologiesContainer.append($('<li class="online"><a href="' + postData.url + '">See online</a></li>'));

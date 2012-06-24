@@ -50,7 +50,7 @@ cite: #{json['cite']}
                     <ul class="technologies">
 #{json['technologies'].collect.with_index {|t, i| '                        <li' + (i + 1 == t_size ? ' class="last"' : '') + '>' + (TECH[t[0].to_s][1] ? '<abbr title="' + TECH[t[0].to_s][1] + '">' : '') + TECH[t[0].to_s][0] + (TECH[t[0].to_s][1] ? '</abbr>' : '') + (t[1] ? ' ' + t[1].to_s : '') + '</li>'}.join(10.chr)}
                         <li class="date"><span class="#{MONTHS[date[1]].downcase}">#{MONTHS[date[1]]}</span> #{date[0]}</li>
-#{json['preview'] ? '                        <li class="preview"><a href="/preview/' + json['id'] + '/">See preview</a></li>' + 10.chr : ''}                    </ul>
+#{json['preview'] ? '                        <li class="preview"><a href="/' + json['id'] + '/">See preview</a></li>' + 10.chr : ''}                    </ul>
 #{json['online'] ? '                        <li class="online"><a href="' + json['url'] + '">See online</a></li>' + 10.chr : ''}                    </ul>
                 </section>
 EOF
