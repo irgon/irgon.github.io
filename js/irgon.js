@@ -86,6 +86,10 @@
             })
             $(document).keypress(function(e) {
                 var previousPostId, nextPostId, lastPost;
+                if(e.keyCode === 0 && e.charCode === 117) {
+                    e.preventDefault();
+                    window.location.href = 'https://github.com/irgon/irgon.github.com/';
+                }
                 if(e.charCode === 0) {
                     switch(e.keyCode) {
                         case 37:
