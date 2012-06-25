@@ -15,3 +15,4 @@
 * check in all browsers
 * add accessibility improvements
 * add microformats
+* add 404 page

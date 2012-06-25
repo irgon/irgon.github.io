@@ -1,0 +1,17 @@
+{
+    "id": "cimp",
+    "title": "Centrum Informacji",
+    "cite": "Medycyny Podróży",
+    "description": {
+        "en": "Online leaflet about prevention and protection against Malaria.",
+        "pl": "Ulotka online o metodach zapobiegania i ochrony przeciwko Malarii."
+    },
+    "url": "http://www.cimp.pl/",
+    "technologies": {
+        "xhtml": 1.1,
+        "css": 2.1
+    },
+    "preview": true,
+    "online": false,
+    "date": "2011-08-19"
+}

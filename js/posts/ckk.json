@@ -1,0 +1,17 @@
+{
+    "id": "ckk",
+    "title": "Centrum Konferencyjne",
+    "cite": "Kopernik",
+    "description": {
+        "en": "Online presentation of Kopernik conference centre.",
+        "pl": "Prezentacja online Centrum Konferencyjnego Kopernik."
+    },
+    "url": "http://centrumkonferencyjnekopernik.pl/",
+    "technologies": {
+        "xhtml": 1.1,
+        "css": 2.1
+    },
+    "preview": true,
+    "online": true,
+    "date": "2012-03-20"
+}

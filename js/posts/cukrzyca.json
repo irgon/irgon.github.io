@@ -1,0 +1,17 @@
+{
+    "id": "cukrzyca",
+    "title": "Cukrzyca",
+    "cite": "Porady dla diabetyków",
+    "description": {
+        "en": "An online campaign to promote the fight against diabetes, including among other things advice for diabetics.",
+        "pl": "Kampania online promująca walkę z cukrzycą, zawierająca m.in. porady dla diabetyków."
+    },
+    "url": "http://cukrzyca.sos.pl/",
+    "technologies": {
+        "xhtml": 1.1,
+        "css": 2.1
+    },
+    "preview": true,
+    "online": true,
+    "date": "2011-01-14"
+}

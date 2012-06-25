@@ -1,0 +1,17 @@
+{
+    "id": "avamys",
+    "title": "Avamys",
+    "cite": "Alergiczny nieżyt nosa",
+    "description": {
+        "en": "Online leaflet for Avamys - anti-allergy drug.",
+        "pl": "Ulotka online preparatu Avamys - skutecznego w leczeniu alergicznego nieżytu nosa."
+    },
+    "url": false,
+    "technologies": {
+        "xhtml": 1.1,
+        "css": 2.1
+    },
+    "preview": true,
+    "online": false,
+    "date": "2011-08-03"
+}

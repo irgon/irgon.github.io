@@ -1,0 +1,17 @@
+{
+    "id": "bigansoft",
+    "title": "BiganSoft",
+    "cite": "Bo klient jest najważniejszy",
+    "description": {
+        "en": "BiganSoft is a .net projects writers web agency.",
+        "pl": "BiganSoft to pisząca projekt w .net agencja interaktywna."
+    },
+    "url": "http://www.bigansoft.pl/",
+    "technologies": {
+        "xhtml": 1.1,
+        "css": 2.1
+    },
+    "preview": true,
+    "online": true,
+    "date": "2011-01-15"
+}
