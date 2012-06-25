@@ -1,0 +1,17 @@
+{
+    "id": "stalexport",
+    "title": "Stalexport",
+    "cite": "Autostrada Małopolska",
+    "description": {
+        "en": "Information on tolls A4 Katowice-Krakow, toll rates, discounts for frequent users of the A4 motorway travel, discount tickets, dates of their validity, point of sale discount tickets and discount tickets online sales.",
+        "pl": "Informacja o opłatach za przejazd autostradą A4 Katowice-Kraków, stawkach za przejazd, rabatach dla osób często korzystających z przejazdu autostradą A4, biletach rabatowych, terminach ich ważności, punktach sprzedaży biletów rabatowych oraz sprzedaży internetowej biletów rabatowych."
+    },
+    "url": "http://www.autostrada-a4.pl/",
+    "technologies": {
+        "xhtml": 1.1,
+        "css": 2.1
+    },
+    "preview": true,
+    "online": true,
+    "date": "2010-10-04"
+}
