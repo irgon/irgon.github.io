@@ -1,0 +1,19 @@
+{
+    "id": "tyverb",
+    "title": "Tyverb",
+    "cite": "z letrozolem",
+    "description": {
+        "en": "Tyverb promotional campaign, a drug effective in the fight against breast cancer.",
+        "pl": "Kampania promocyjna Tyverb, leku skutecznego w walce z rakiem piersi."
+    },
+    "url": false,
+    "technologies": {
+        "xhtml": 1.1,
+        "css": 2.1,
+        "js": false
+    },
+    "preview": true,
+    "online": false,
+    "date": "2011-06-20"
+}
+

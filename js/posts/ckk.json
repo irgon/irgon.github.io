@@ -9,7 +9,9 @@
     "url": "http://centrumkonferencyjnekopernik.pl/",
     "technologies": {
         "xhtml": 1.1,
-        "css": 2.1
+        "css": 2.1,
+        "php": 5.3,
+        "mysql": 5.5
     },
     "preview": true,
     "online": true,

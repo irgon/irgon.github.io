@@ -1,0 +1,18 @@
+{
+    "id": "votrient",
+    "title": "Votrient",
+    "cite": "pazopanib",
+    "description": {
+        "en": "Pazopanib (trade name Votrient) is a potent and selective multi-targeted receptor tyrosine kinase inhibitor of VEGFR-1, VEGFR-2, VEGFR-3, PDGFR-a/β, and c-kit that blocks tumor growth and inhibits angiogenesis.",
+        "pl": "Pazopanib (nazwa handlowa Votrient) jest silnym i selektywnym wielo-ukierunkowanym receptorowym inhibitorem kinazy tyrozynowej VEGFR-1, VEGFR-2, VEGFR-3, PDGFR-a/β i c-kit, który blokuje wzrost guza i hamuje angiogenezę."
+    },
+    "url": false,
+    "technologies": {
+        "xhtml": 1.1,
+        "css": 2.1,
+        "js": false
+    },
+    "preview": true,
+    "online": false,
+    "date": "2011-02-15"
+}

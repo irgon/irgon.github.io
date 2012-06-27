@@ -16,3 +16,4 @@
 * add accessibility improvements
 * add microformats
 * add 404 page
+* fix loading images

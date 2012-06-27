@@ -9,7 +9,8 @@
     "url": "http://www.ad-bud.pl/",
     "technologies": {
         "xhtml": 1.1,
-        "css": 2.1
+        "css": 2.1,
+        "php": 5.3
     },
     "preview": true,
     "online": true,

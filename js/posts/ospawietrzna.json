@@ -1,0 +1,19 @@
+{
+    "id": "ospawietrzna",
+    "title": "Ospa wietrzna",
+    "cite": "Chronię moje dziecko",
+    "description": {
+        "en": "What is the risk that your child will develop chickenpox? Answer a few quick questions.",
+        "pl": "Jakie jest ryzyko, że Twoje dziecko zachoruje na ospę? Odpowiedz na kilka krótkich pytań."
+    },
+    "url": "http://ospawietrzna.pl/",
+    "technologies": {
+        "xhtml": 1.1,
+        "css": 2.1,
+        "js": false
+    },
+    "preview": true,
+    "online": true,
+    "date": "2011-02-17"
+}
+

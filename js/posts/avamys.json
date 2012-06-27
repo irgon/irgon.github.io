@@ -9,7 +9,8 @@
     "url": false,
     "technologies": {
         "xhtml": 1.1,
-        "css": 2.1
+        "css": 2.1,
+        "js": false
     },
     "preview": true,
     "online": false,

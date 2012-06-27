@@ -1,0 +1,18 @@
+{
+    "id": "weedo",
+    "title": "Weedo",
+    "cite": "iPad accessories",
+    "description": {
+        "en": "Weedo SA is a manufacturer of accessories for the iPad.",
+        "pl": "Weedo SA jest producentem akcesoriów do iPada."
+    },
+    "url": false,
+    "technologies": {
+        "xhtml": 1.1,
+        "css": 2.1,
+        "js": false
+    },
+    "preview": true,
+    "online": false,
+    "date": "2011-07-13"
+}

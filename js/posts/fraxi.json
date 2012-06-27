@@ -1,0 +1,18 @@
+{
+    "id": "fraxi",
+    "title": "Fraxi",
+    "cite": "Heparyna drobnocząsteczkowa",
+    "description": {
+        "en": "Heparin, that by matching the appropriate dose to body weight ensures the effectiveness and safety of therapy.",
+        "pl": "Heparyna drobnocząsteczkowa, która dzięki dopasowaniu właściwej dawki do masy ciała pacjenta zapewnia skuteczność i bezpieczeństwo terapii."
+    },
+    "url": "http://www.fraxi.pl/",
+    "technologies": {
+        "xhtml": 1.1,
+        "css": 2.1,
+        "js": false
+    },
+    "preview": true,
+    "online": true,
+    "date": "2011-05-07"
+}

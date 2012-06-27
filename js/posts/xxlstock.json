@@ -1,0 +1,18 @@
+{
+    "id": "xxlstock",
+    "title": "XXLStock",
+    "cite": "Photo Stock",
+    "description": {
+        "en": "XXLStock is the first platform on Polish market bringing together authors of digital creations such as photography, music, video, graphics, e-books or audio-books with clients who are interesting in purchase.",
+        "pl": "XXLStock to pierwsza na polskim rynku platforma, która łączy twórców różnorodnych dzieł cyfrowych takich jak zdjęcia, muzyka, video, grafika, e-booki czy audiobooki z ich potencjalnymi odbiorcami."
+    },
+    "url": "http://www.xxlstock.com/",
+    "technologies": {
+        "xhtml": 1.1,
+        "css": 2.1,
+        "js": false
+    },
+    "preview": true,
+    "online": false,
+    "date": "2011-01-14"
+}

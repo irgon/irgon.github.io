@@ -1,0 +1,19 @@
+{
+    "id": "niedoboryodpornosci",
+    "title": "Niedobory odporności",
+    "cite": "Postaw na odporność",
+    "description": {
+        "en": "Site dedicated to immune deficiencies, alarming symptoms and diagnosis, treatment and complications.",
+        "pl": "Strona poświęcona niedoborom odporności, niepokojącym objawom oraz diagnostyce, leczeniu i powikłaniom."
+    },
+    "url": "http://niedoboryodpornosci.pl/",
+    "technologies": {
+        "xhtml": 1.1,
+        "css": 2.1,
+        "js": false
+    },
+    "preview": true,
+    "online": true,
+    "date": "2011-04-13"
+}
+

@@ -9,7 +9,8 @@
     "url": "http://gardenpartner.com.pl/",
     "technologies": {
         "html": 5,
-        "css": 3
+        "css": 3,
+        "js": false
     },
     "preview": true,
     "online": true,

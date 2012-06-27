@@ -1,0 +1,18 @@
+{
+    "id": "malaria",
+    "title": "Malaria",
+    "cite": "Chroń się od zaraz",
+    "description": {
+        "en": "Web site dedicated to malaria. Prophylaxis of malaria, malarial areas, medical advice, travel medicine clinic addresses.",
+        "pl": "Serwis poświęcony malarii. Profilaktyka malarii, rejony malaryczne, porady lekarza, adresy poradni medycyny tropikalnej."
+    },
+    "url": "http://www.malaria.com.pl/",
+    "technologies": {
+        "xhtml": 1.1,
+        "css": 2.1,
+        "js": false
+    },
+    "preview": true,
+    "online": false,
+    "date": "2011-06-27"
+}
