@@ -1,0 +1,17 @@
+{
+    "id": "jkm",
+    "title": "Janusz",
+    "cite": "Korwin-Mikke",
+    "description": {
+        "en": "Home of the leading Polish right-wing columnist - Janusz Korwin-Mikke.",
+        "pl": "Strona czołowego polskiego publicysty prawicowego - Janusza Korwina-Mikke."
+    },
+    "url": "http://www.korwin-mikke.pl/",
+    "technologies": {
+        "xhtml": 1.1,
+        "css": 2.1
+    },
+    "preview": true,
+    "online": false,
+    "date": "2007-10-20"
+}

@@ -1,0 +1,18 @@
+{
+    "id": "iizt",
+    "title": "IIZT",
+    "cite": "Internet Is Zero Tolerance",
+    "description": {
+        "en": "IIZT [say \"east\"] is an independent and international agency for digital consultancy, design and creative & technical production.",
+        "pl": "IIZT [wym. \"east\" - wschód] jest niezależną i międzynarodową Agencją cyfrowego doradztwa, projektowania i produkcji twórczej oraz technicznej."
+    },
+    "url": "http://iizt.com/",
+    "technologies": {
+        "xhtml": 1.1,
+        "css": 2.1,
+        "js": false
+    },
+    "preview": true,
+    "online": false,
+    "date": "2009-01-09"
+}

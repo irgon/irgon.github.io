@@ -1,0 +1,17 @@
+{
+    "id": "krainapomyslow",
+    "title": "Kraina Pomysłow",
+    "cite": "Mydła ręcznie robione",
+    "description": {
+        "en": "Showcase and presentation of firm selling lots of different types hand-made cosmetics.",
+        "pl": "Galeria i prezentacja firmy trudniącej się sprzedażą różnych typów ręcznie wyrabianych kosmetyków."
+    },
+    "url": "http://krainapomyslow.pl/",
+    "technologies": {
+        "xhtml": 1.1,
+        "css": 2.1
+    },
+    "preview": false,
+    "online": true,
+    "date": "2006-04-11"
+}

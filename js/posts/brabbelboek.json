@@ -1,0 +1,20 @@
+{
+    "id": "brabbelboek",
+    "title": "BrabbelBoek",
+    "cite": "Your online Baby book",
+    "description": {
+        "en": "BrabbelBoek is a social community specifically for mothers, fathers and their babies. It is an interactive community that allows parents to celebrate and share their newborn baby.",
+        "pl": "BrabbelBoek to społeczność mam, ojców i dzieci. To interaktywny serwis na którym można świętować narodziny potomka."
+    },
+    "url": "http://www.brabbelboek.nl/",
+    "technologies": {
+        "xhtml": 1.1,
+        "css": 2.1,
+        "js": false,
+        "php": 5.2,
+        "mysql": 5.0
+    },
+    "preview": false,
+    "online": true,
+    "date": "2008-04-14"
+}

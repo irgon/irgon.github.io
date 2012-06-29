@@ -1,0 +1,17 @@
+{
+    "id": "kistenmakerterrein",
+    "title": "Kistenmaker Terrin",
+    "cite": "Woningen en Appartementen",
+    "description": {
+        "en": "Online presentation of houses available for sale, from Cala van den Brink and Pieter Joep.",
+        "pl": "Prezentacja online domów wystawionych na sprzedaż, przez Cala van den Brink i Pietera Joep."
+    },
+    "url": "http://kistenmakerterrein.nl/",
+    "technologies": {
+        "xhtml": 1.1,
+        "css": 2.1
+    },
+    "preview": true,
+    "online": true,
+    "date": "2008-08-19"
+}

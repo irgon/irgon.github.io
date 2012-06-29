@@ -1,0 +1,18 @@
+{
+    "id": "optiva",
+    "title": "Optiva",
+    "cite": "Salon optyczny",
+    "description": {
+        "en": "Page of company selling ophthalmic accessories.",
+        "pl": "Strona firmy sprzedającej akcesoria okulistyczne."
+    },
+    "url": "http://www.optiva.pl/",
+    "technologies": {
+        "xhtml": 1.1,
+        "css": 2.1,
+        "js": false
+    },
+    "preview": true,
+    "online": true,
+    "date": "2010-07-21"
+}

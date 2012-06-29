@@ -1,0 +1,18 @@
+{
+    "id": "instytutpiekna",
+    "title": "Instytut",
+    "cite": "piękna",
+    "description": {
+        "en": "Beautiful philosophies of the Institute is based on the idea of ​​wellness expressing the desire for well-being and health - the harmony between body and mind.",
+        "pl": "Filizofia działania Instytutu Piękna oparta jest na ide wellness wyrażającej dążenie do dobrego samopoczucia i zdrowia - harmonii między ciałem a umysłem."
+    },
+    "url": "http://www.instytutpiekna.com/",
+    "technologies": {
+        "xhtml": 1.1,
+        "css": 2.1,
+        "js": false
+    },
+    "preview": true,
+    "online": false,
+    "date": "2009-11-12"
+}

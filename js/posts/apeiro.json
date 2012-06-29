@@ -1,0 +1,17 @@
+{
+    "id": "apeiro",
+    "title": "apeiro",
+    "cite": "10 prostych pojęć",
+    "description": {
+        "en": "A webpage of the interactive agency apeiro.",
+        "pl": "Strona agencji interaktywnej apeiro."
+    },
+    "url": "http://apeiro.pl/",
+    "technologies": {
+        "xhtml": 1.1,
+        "css": 2.1
+    },
+    "preview": true,
+    "online": false,
+    "date": "2008-12-12"
+}

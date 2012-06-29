@@ -1,0 +1,20 @@
+{
+    "id": "bruidsbubbels",
+    "title": "BruidsBubbels",
+    "cite": "Your online Wedding book",
+    "description": {
+        "en": "BruidsBubbels is an interactive community where you can share and celebrate your wedding with family and friends.",
+        "pl": "BruidsBubbels to interaktywna społeczność, wśród której możesz celebrować swój ślub wraz z rodziną i przyjaciółmi."
+    },
+    "url": "http://www.bruidsbubbels.nl/",
+    "technologies": {
+        "xhtml": 1.1,
+        "css": 2.1,
+        "js": false,
+        "php": 5.2,
+        "mysql": 5.0
+    },
+    "preview": false,
+    "online": true,
+    "date": "2008-04-14"
+}

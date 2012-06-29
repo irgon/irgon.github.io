@@ -1,0 +1,17 @@
+{
+    "id": "nodormz",
+    "title": "NoDormz",
+    "cite": "Student voices for student places",
+    "description": {
+        "en": "NoDormz.com is a place to help students find off-campus housing getting ratings and reviews from students.",
+        "pl": "NoDormz.com to miejsce, które ma pomóc studentom w odnalezieniu najlepszego akademika bazując na ocenach i recenzjach innych studentów."
+    },
+    "url": "http://www.nodormz.com/",
+    "technologies": {
+        "xhtml": 1.1,
+        "css": 2.1
+    },
+    "preview": true,
+    "online": true,
+    "date": "2010-05-07"
+}

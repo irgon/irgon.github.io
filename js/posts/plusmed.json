@@ -1,0 +1,17 @@
+{
+    "id": "plusmed",
+    "title": "Plus-Med",
+    "cite": "Salon ortopedyczny",
+    "description": {
+        "en": "Medical and orthopedic store - PLUS-MED Krakow. This package includes: medical equipment, orthopedic rehabilitation equipment. Execution of requests NFZ.",
+        "pl": "Sklep medyczno-ortopedyczny - PLUS-MED Kraków. W ofercie: sprzęt medyczny, sprzęt ortopedyczny, sprzęt rehabilitacyjny. Realizacja wniosków NFZ."
+    },
+    "url": "http://www.plus-med.pl/",
+    "technologies": {
+        "xhtml": 1.1,
+        "css": 2.1
+    },
+    "preview": true,
+    "online": true,
+    "date": "2010-03-19"
+}

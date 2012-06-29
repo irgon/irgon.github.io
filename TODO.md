@@ -17,3 +17,7 @@
 * add microformats
 * add 404 page
 * fix loading images
+* switch from images to fonts where possible (logo, arrows)
+* minify js and css
+* favicon
+* add background color in case of disabled images

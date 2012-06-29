@@ -1,0 +1,19 @@
+{
+    "id": "powiatkonecki",
+    "title": "Powiat konecki",
+    "cite": "Innowacyjność kluczem do rozwoju",
+    "description": {
+        "en": "Page of project \"Innovation is the key to progress\" realised by konecki district.",
+        "pl": "Strona projektu \"Innowacyjność kluczem do rozwoju\" realizowanego przez powiat konecki."
+    },
+    "url": "http://innowacyjnosc.powiat.konskie.pl/",
+    "technologies": {
+        "xhtml": 1.1,
+        "css": 2.1,
+        "php": 5.1,
+        "mysql": 5.0
+    },
+    "preview": false,
+    "online": true,
+    "date": "2006-07-04"
+}

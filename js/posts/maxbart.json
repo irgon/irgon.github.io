@@ -1,0 +1,18 @@
+{
+    "id": "maxbart",
+    "title": "MaxBart",
+    "cite": "Budujemy na maxa!",
+    "description": {
+        "en": "MaxBart is a construction - renovation company, operating in all key segments of the construction industry.",
+        "pl": "Firma MaxBart jest firmą budowlano - remontową działającą we wszystkich podstawowych segmentach branży budowlanej."
+    },
+    "url": false,
+    "technologies": {
+        "xhtml": 1.1,
+        "css": 2.1,
+        "js": false
+    },
+    "preview": true,
+    "online": false,
+    "date": "2009-12-22"
+}
