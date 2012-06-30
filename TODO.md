@@ -17,7 +17,9 @@
 * add microformats
 * add 404 page
 * fix loading images
-* switch from images to fonts where possible (logo, arrows)
-* minify js and css
-* favicon
-* add background color in case of disabled images
+* ~~switch from images to fonts where possible (logo, arrows)~~
+* ~~minify js and css~~
+* ~~favicon~~
+* ~~add background color in case of disabled images~~
+* test with YSlow
+* add favicon to previews and change paths to preview.min.css/js
