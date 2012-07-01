@@ -1,0 +1,20 @@
+{
+    "id": "niebokopernika",
+    "title": "Niebo Kopernika",
+    "cite": "Planetarium",
+    "description": {
+        "en": "Thanks to its equipment, quality of shows and design, the Heavens of Copernicus is one of the most modern and original planetariums in Europe. It offers sky displays, film projections, lectures and meetings.",
+        "pl": "Niebo Kopernika, dzięki wyposażeniu, jakości pokazów oraz swojej konstrukcji, jest jednym z najnowocześniejszych i najoryginalniejszych planetariów w Europie. Odbywają się tu pokazy nieba, projekcje filmowe, wykłady oraz spotkania."
+    },
+    "url": "http://www.niebokopernika.pl/",
+    "technologies": {
+        "xhtml": 1.1,
+        "css": 2.1,
+        "js": false,
+        "php": "5.3",
+        "mysql": "5.1"
+    },
+    "preview": true,
+    "online": true,
+    "date": "2011-08-25"
+}
