@@ -1,0 +1,17 @@
+{
+    "id": "schiphol",
+    "title": "Schiphol",
+    "cite": "International Airport",
+    "description": {
+        "en": "Schiphol is an important European airport, ranking as Europe’s 4th busiest and the world's 12th busiest by total passenger traffic. It also ranks as the world’s 6th busiest by international passenger traffic and the world’s 17th largest for cargo tonnage.",
+        "pl": "Schiphol jest jednym z najważniejszych lotnisk europejskich, czwartym najbardziej obciążonym lotniskiem w Europie i 12tym na świecie. Jest też 6tym największym portem międzynarodowym i 17tym największym portem przeładunkowym."
+    },
+    "url": "http://www.schiphol.nl/",
+    "technologies": {
+        "xhtml": 1.1,
+        "css": 2.1
+    },
+    "preview": true,
+    "online": true,
+    "date": "2009-11-15"
+}
