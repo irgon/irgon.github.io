@@ -13,13 +13,14 @@
 * ~~add loading indicator in preview~~
 * ~~validate js in jslint~~
 * check in all browsers
-* add accessibility improvements
+* ~~add accessibility improvements~~
 * add microformats
 * add 404 page
-* fix loading images
+* ~~fix loading images~~
 * ~~switch from images to fonts where possible (logo, arrows)~~
 * ~~minify js and css~~
 * ~~favicon~~
 * ~~add background color in case of disabled images~~
 * test with YSlow
 * add favicon to previews and change paths to preview.min.css/js
+* ~~add nice JS urls~~

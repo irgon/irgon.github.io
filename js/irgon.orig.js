@@ -2,16 +2,17 @@
 /*properties
     '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12',
     BACKCODES, CODES, MONTHS, TECH, addClass, ajax, append, arrowsContainer,
-    attr, call, charCode, cite, click, cookie, css, currentLanguage, currentPost,
-    data, dataType, date, description, empty, en, 'en-US', fadeIn, fadeOut,
-    fetchPost, find, hasOwnProperty, hide, href, html, id, imagesLoaded, indexOf,
-    init, is, js, keyCode, keypress, language, list, listContainer, location,
-    map, match, mysql, navigator, online, parent, php, pl, 'pl-PL', postCache,
-    postContainer, preventDefault, preview, ready, removeClass, replace,
-    setCurrentLanguage, show, showList, showNextPost, showPost, showPreviousPost,
-    split, success, technologies, title, toLowerCase, translate, url,
-    userLanguage, xhtml
+    attr, bind, call, charCode, cite, click, cookie, css, currentLanguage,
+    currentPost, currentUrl, data, dataType, date, description, empty, en,
+    'en-US', fadeIn, fadeOut, fetchPost, find, hasOwnProperty, hash, height,
+    hide, href, html, id, imgPreview, indexOf, init, is, js, keyCode, keypress,
+    language, list, listContainer, location, map, match, mysql, navigator,
+    online, parent, php, pl, 'pl-PL', postCache, postContainer, preventDefault,
+    preview, ready, removeClass, replace, setCurrentLanguage, show, showList,
+    showNextPost, showPost, showPreviousPost, split, success, technologies,
+    title, toLowerCase, translate, url, userLanguage, watchUrl, xhtml
 */
+
 
 
 var jQuery = typeof(jQuery) === 'undefined' ? null : jQuery;
@@ -92,12 +93,18 @@ var jQuery = typeof(jQuery) === 'undefined' ? null : jQuery;
         list: [],
         currentPost: null,
         postCache: {},
+        currentUrl: null,
         init: function() {
             $('body').addClass('loading');
 
             this.arrowsContainer = $('#portfolio .arrows');
             this.listContainer = $('#portfolio ul.portfolio');
             this.postContainer = $('#portfolio div.portfolio');
+            this.imgPreview = this.postContainer.find('img.preview');
+
+            this.imgPreview.bind('load', function() {
+                $('body').removeClass('loading');
+            });
 
             var self = this;
             $.ajax({
@@ -105,6 +112,7 @@ var jQuery = typeof(jQuery) === 'undefined' ? null : jQuery;
                 dataType: 'json',
                 success: function(response) {
                     self.list = response;
+                    self.watchUrl();
                 }
             });
 
@@ -150,12 +158,27 @@ var jQuery = typeof(jQuery) === 'undefined' ? null : jQuery;
                             e.preventDefault();
                             self.showNextPost();
                             break;
-
                     }
                 }
             });
 
+            $('#top a').attr('href', '#');
+
             $('body').removeClass('loading');
+        },
+        watchUrl: function() {
+            var self = this;
+            setInterval(function() {
+                var urlId = window.location.hash.replace(/^#!\//, '').replace(/\/?$/, '');
+                if(self.currentUrl !== urlId) {
+                    self.currentUrl = urlId;
+                    if(self.list.indexOf(urlId) > -1) {
+                        self.fetchPost(urlId);
+                    } else {
+                        self.showList();
+                    }
+                }
+            }, 100);
         },
         showList: function() {
             this.arrowsContainer.fadeOut(1000, function() {
@@ -163,6 +186,7 @@ var jQuery = typeof(jQuery) === 'undefined' ? null : jQuery;
             });
             this.postContainer.hide();
             this.listContainer.show();
+            window.location.hash = '';
         },
         showPreviousPost: function() {
             var previousPostId = this.list[this.list.indexOf(this.currentPost) - 1];
@@ -178,18 +202,22 @@ var jQuery = typeof(jQuery) === 'undefined' ? null : jQuery;
         },
         fetchPost: function(postId) {
             $('body').addClass('loading');
-
-            var self = this;
-            if(this.postCache[postId]) {
-                this.showPost(this.postCache[postId]);
+            this.imgPreview.attr('src', '');
+            if(this.currentUrl !== postId) {
+                window.location.hash = '!/' + postId;
             } else {
-                $.ajax({
-                        url: '/js/posts/' + postId + '.json',
-                        dataType: 'json',
-                        success: function(response) {
-                            self.showPost.call(self, response);
-                        }
-                });
+                var self = this;
+                if(this.postCache[postId]) {
+                    this.showPost(this.postCache[postId]);
+                } else {
+                    $.ajax({
+                            url: '/js/posts/' + postId + '.json',
+                            dataType: 'json',
+                            success: function(response) {
+                                self.showPost.call(self, response);
+                            }
+                    });
+                }
             }
         },
         showPost: function(postData) {
@@ -198,9 +226,6 @@ var jQuery = typeof(jQuery) === 'undefined' ? null : jQuery;
                 technologyVersion,
                 date = postData.date.split('-'),
                 technologiesContainer = $('.technologies', this.postContainer);
-            this.postContainer.imagesLoaded(function() {
-                $('body').removeClass('loading');
-            });
             this.currentPost = postData.id;
             if(!this.postCache[postData.id]) {
                 this.postCache[postData.id] = postData;
@@ -211,7 +236,6 @@ var jQuery = typeof(jQuery) === 'undefined' ? null : jQuery;
                     this.postContainer.find('.translate-' + lang).html(postData.description[lang]);
                 }
             }
-            this.postContainer.find('img.preview').attr('src', '/images/posts/' + postData.id + '.jpg');
             technologiesContainer.empty();
             for(tech in postData.technologies) {
                 if(postData.technologies.hasOwnProperty(tech)) {
@@ -231,6 +255,10 @@ var jQuery = typeof(jQuery) === 'undefined' ? null : jQuery;
                 $(this).parent().removeClass('list');
             });
             Translator.translate(Translator.currentLanguage);
+            this.imgPreview.attr('src', '/images/posts/' + postData.id + '.jpg');
+            if(this.imgPreview.height() > 0) {
+                $('body').removeClass('loading');
+            }
             this.postContainer.show();
             this.listContainer.hide();
         }
