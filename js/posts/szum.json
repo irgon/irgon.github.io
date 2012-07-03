@@ -1,0 +1,20 @@
+{
+    "id": "szum",
+    "title": "SZUM",
+    "cite": "Stowarzyszenie",
+    "description": {
+        "en": "SZUM brings together young artists, managers and patrons who wish to present their activities, promote and produce various projects and events.",
+        "pl": "SZUM zrzesza młodych artystów, menadżerów oraz mecenasów sztuki, którzy swą aktywnością pragną stwarzać, promować oraz produkować różnorodne projekty i wydarzenia kulturalne."
+    },
+    "url": "http://www.szum.org.pl/",
+    "technologies": {
+        "html": 5,
+        "css": 3,
+        "js": false,
+        "php": 5.3,
+        "mysql": 5.1
+    },
+    "preview": false,
+    "online": true,
+    "date": "2011-05-07"
+}

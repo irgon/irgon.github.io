@@ -1,0 +1,20 @@
+{
+    "id": "perfectdoor",
+    "title": "PerfectDoor",
+    "cite": "Producent drzwi i ościeżnic",
+    "description": {
+        "en": "Perfectdoor Company Ltd. is one of the fastest growing companies on the Polish market. By long tradition, continued investment in new technologies, managed to earn a stable position in the market for internal doors and door frames.",
+        "pl": "Firma Perfectdoor sp. z o. o. jest jedną z najprężniej rozwijających się firm na rynku polskim. Dzięki wieloletniej tradycji, ciągłym inwestycjom w nowe technologie, zdążyła wypracować dla siebie stabilną pozycję na rynku drzwi wewnętrznych i ościeżnic."
+    },
+    "url": "http://perfectdoor.pl/",
+    "technologies": {
+        "xhtml": 1.1,
+        "css": 2.1,
+        "js": false,
+        "php": 5.2,
+        "mysql": 5.1
+    },
+    "preview": false,
+    "online": true,
+    "date": "2010-09-01"
+}

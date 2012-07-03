@@ -1,0 +1,20 @@
+{
+    "id": "shiva",
+    "title": "Shiva",
+    "cite": "Agencja Artystyczna",
+    "description": {
+        "en": "Artistic Agency SHIVA was found on July of 2005 in Tarnow and is available continuesly since then. The main course of the firm is organization of dance projects.",
+        "pl": "Agencja Artystyczna SHIVA została założona w Tarnowie w 2005 roku i działa nieprzerwanie do dziś. Główną misją firmy jest organizacja projektów i kursów tanecznych."
+    },
+    "url": "http://taniec.tarnow.pl/",
+    "technologies": {
+        "xhtml": 1.1,
+        "css": 2.1,
+        "js": false,
+        "php": 5.1,
+        "mysql": 5.0
+    },
+    "preview": false,
+    "online": true,
+    "date": "2009-04-21"
+}
