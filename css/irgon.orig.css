@@ -400,6 +400,7 @@ body.loading-lang #content div.column-left {
 #footer p {
     width: 980px;
     margin: 0 auto;
+    text-align: center;
 }
 
 /* translations */

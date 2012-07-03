@@ -249,7 +249,7 @@ var jQuery = typeof(jQuery) === 'undefined' ? null : jQuery;
                 technologiesContainer.append($('<li class="preview"><a href="/' + postData.id + '/" target="_blank">See preview</a></li>'));
             }
             if(postData.online) {
-                technologiesContainer.append($('<li class="online"><a href="' + postData.url + '" target="_blank">See online</a></li>'));
+                technologiesContainer.append($('<li class="online"><a href="' + postData.url + '" target="_blank" rel="nofollow">See online</a></li>'));
             }
             this.arrowsContainer.fadeIn(1000, function() {
                 $(this).parent().removeClass('list');
