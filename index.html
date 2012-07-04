@@ -5,6 +5,9 @@ title: IRGON SYSTEM
 
                 <section id="portfolio" class="list">{% include arrows.html %}
                     <h2>Portfolio</h2>
+                    <section id="slider">
+{% include slider.html %}
+                    </section>
                     <ul class="portfolio">{% for post in site.posts %}
                         <li>
                             <a href="{{ post.url }}">

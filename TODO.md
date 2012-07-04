@@ -24,5 +24,5 @@
 * ~~test with YSlow~~
 * add favicon to previews and change paths to preview.min.css/js
 * ~~add nice JS urls~~
-* make it responsive
-* add highlighting of biggest and best projects (slider ?)
+* ~~make it responsive~~
+* ~~add highlighting of biggest and best projects (slider ?)~~

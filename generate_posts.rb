@@ -25,6 +25,7 @@ MONTHS = {
 }
 
 json_list = []
+json_promoted = []
 
 jsons = Dir.glob(File.join('js', 'posts', '*.json')).collect do |json|
   JSON.parse(File.read(json).force_encoding('utf-8'))
@@ -63,6 +64,16 @@ EOF
 )
   end
   json_list.push(json['id'])
+  json_promoted.push(json) if json['promoted']
 end
 
 File.open(File.join('js', 'portfolio.json'), 'w') { |file| file.write(json_list.to_json) }
+File.open(File.join('js', 'promoted.json'), 'w') { |file| file.write(json_promoted.collect{|json| json['id']}.to_json) }
+
+slider =  "                        <ul>\n"
+json_promoted[0..4].each do |json|
+slider += "                            <li>\n                                <a href=\"/#{json['date'].split('-').join('/')}/#{json['id']}.html\"><img src=\"/images/posts/#{json['id']}.jpg\" alt=\"#{json['title']}\" /></a>\n                            </li>\n"
+end
+slider += "                        </ul>"
+
+File.open(File.join('_includes', 'slider.html'), 'w') { |file| file.write(slider) }

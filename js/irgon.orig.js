@@ -4,14 +4,16 @@
     BACKCODES, CODES, MONTHS, TECH, addClass, ajax, append, arrowsContainer,
     attr, bind, call, charCode, cite, click, cookie, css, currentLanguage,
     currentPost, currentUrl, data, dataType, date, description, empty, en,
-    'en-US', fadeIn, fadeOut, fetchPost, find, hasOwnProperty, hash, height,
-    hide, href, html, id, imgPreview, indexOf, init, is, js, keyCode, keypress,
-    language, list, listContainer, location, map, match, mysql, navigator,
-    online, parent, php, pl, 'pl-PL', postCache, postContainer, preventDefault,
-    preview, ready, removeClass, replace, setCurrentLanguage, show, showList,
-    showNextPost, showPost, showPreviousPost, split, success, technologies,
-    title, toLowerCase, translate, url, userLanguage, watchUrl, xhtml
+    'en-US', fadeIn, fadeOut, fetchPost, find, fitText, hasOwnProperty, hash,
+    height, hide, href, html, id, imgPreview, indexOf, init, is, js, keyCode,
+    keypress, language, list, listContainer, location, log, map, match, mysql,
+    navigator, on, online, parent, php, pl, 'pl-PL', postCache, postContainer,
+    preventDefault, preview, ready, removeClass, replace, resize,
+    setCurrentLanguage, show, showList, showNextPost, showPost, showPreviousPost,
+    sliderContainer, split, success, technologies, title, toLowerCase, translate,
+    url, userLanguage, watchUrl, width, xhtml
 */
+
 
 
 
@@ -100,6 +102,7 @@ var jQuery = typeof(jQuery) === 'undefined' ? null : jQuery;
             this.arrowsContainer = $('#portfolio .arrows');
             this.listContainer = $('#portfolio ul.portfolio');
             this.postContainer = $('#portfolio div.portfolio');
+            this.sliderContainer = $('#slider');
             this.imgPreview = this.postContainer.find('img.preview');
 
             this.imgPreview.bind('load', function() {
@@ -175,18 +178,22 @@ var jQuery = typeof(jQuery) === 'undefined' ? null : jQuery;
                     if(self.list.indexOf(urlId) > -1) {
                         self.fetchPost(urlId);
                     } else {
-                        self.showList();
+                        if(!window.location.href.match(/[0-9]{4}\/[0-9]{2}\/[0-9]{2}/)) {
+                            self.showList();
+                        }
                     }
                 }
             }, 100);
         },
         showList: function() {
+            $('#content').addClass('view-list').removeClass('view-item');
             this.arrowsContainer.fadeOut(1000, function() {
                 $(this).parent().addClass('list');
             });
             this.postContainer.hide();
             this.listContainer.show();
-            window.location.hash = '';
+            this.sliderContainer.show();
+            window.location.href = '/#';
         },
         showPreviousPost: function() {
             var previousPostId = this.list[this.list.indexOf(this.currentPost) - 1];
@@ -204,7 +211,7 @@ var jQuery = typeof(jQuery) === 'undefined' ? null : jQuery;
             $('body').addClass('loading');
             this.imgPreview.attr('src', '');
             if(this.currentUrl !== postId) {
-                window.location.hash = '!/' + postId;
+                window.location.href = '/#!/' + postId;
             } else {
                 var self = this;
                 if(this.postCache[postId]) {
@@ -226,6 +233,7 @@ var jQuery = typeof(jQuery) === 'undefined' ? null : jQuery;
                 technologyVersion,
                 date = postData.date.split('-'),
                 technologiesContainer = $('.technologies', this.postContainer);
+            this.sliderContainer.hide();
             this.currentPost = postData.id;
             if(!this.postCache[postData.id]) {
                 this.postCache[postData.id] = postData;
@@ -259,6 +267,7 @@ var jQuery = typeof(jQuery) === 'undefined' ? null : jQuery;
             if(this.imgPreview.height() > 0) {
                 $('body').removeClass('loading');
             }
+            $('#content').addClass('view-item').removeClass('view-list');
             this.postContainer.show();
             this.listContainer.hide();
         }
@@ -268,6 +277,14 @@ var jQuery = typeof(jQuery) === 'undefined' ? null : jQuery;
         $('body').removeClass('no-js');
         Translator.init();
         Portfolio.init();
+        $('#top h1 a').fitText(0.433);
     });
+
+    $(window).on('resize', function() {
+        var $slider = $('#slider'), $sliderImg = $slider.find('img'), $sliderLi = $slider.find('li');
+        $slider.height($slider.width() * 0.618033988);
+        $sliderImg.width($slider.width());
+        $sliderLi.width($sliderImg.width()).height($sliderImg.height()).css('marginTop', '-' + ($sliderImg.height() / 2) + 'px').css('marginLeft', '-' + ($sliderImg.width() / 2) + 'px');
+    }).resize();
 
 }(jQuery));
