@@ -136,13 +136,13 @@ var jQuery = typeof(jQuery) === 'undefined' ? null : jQuery;
                 e.preventDefault();
                 self.showNextPost();
             });
-            $(document).keypress(function(e) {
+            $(document).bind(($.browser.webkit ? 'keydown' : 'keypress'), function(e) {
                 var lastPost;
-                if(e.keyCode === 0 && e.charCode === 117) {
+                if(e.keyCode === 117 || e.charCode === 117) {
                     e.preventDefault();
                     window.location.href = 'https://github.com/irgon/irgon.github.com/';
                 }
-                if(e.charCode === 0) {
+                if(!e.charCode) {
                     switch(e.keyCode) {
                         case 37:
                             e.preventDefault();
@@ -193,7 +193,7 @@ var jQuery = typeof(jQuery) === 'undefined' ? null : jQuery;
             this.postContainer.hide();
             this.listContainer.show();
             this.sliderContainer.show();
-            window.location.href = '/#';
+            window.location.href = '/#!/';
         },
         showPreviousPost: function() {
             var previousPostId = this.list[this.list.indexOf(this.currentPost) - 1];
