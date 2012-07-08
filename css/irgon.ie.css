@@ -1,0 +1,95 @@
+.ie6 body,
+.ie7 body {
+    background-image: url(../images/bg.png);
+}
+
+.ie a {
+    cursor: pointer;
+}
+
+.ie6 a {
+    border-bottom: solid 1px #bfad9c;
+}
+
+.ie6 .arrows {
+     -ie-xp:expression(this.parsed ? 0 :(this.onmouseover = new Function("this.className += ' hover'") ,this.onmouseout = new Function("this.className = this.className.replace('hover','') ") ,this.parsed = 1) );
+}
+
+.ie6 .arrows cite,
+.ie6 .arrows ul {
+    float: left;
+}
+
+.ie7 .arrows li a,
+.ie8 .arrows li a {
+    behavior: url(css/PIE.htc);
+}
+
+.ie6 .technologies li,
+.ie7 .technologies li {
+    zoom: expression(runtimeStyle.zoom = 1, insertAdjacentHTML('afterBegin', '<span class="before">&nbsp;/&nbsp;</span>'), insertAdjacentHTML('beforeEnd', '<span class="after">,&nbsp;</span>'));
+}
+
+.ie6 .technologies li {
+    -ie-xp: expression(this.parsed ? 0 : ( this.className != '' ? this.className += ' hasclass' : 0 ), this.parsed = 1);
+}
+
+.ie6 .technologies li.hasclass {
+    font-size: 13px;
+}
+
+.ie6 .technologies li.hasclass span.after,
+.ie6 .technologies li span.before {
+    display: none;
+}
+
+.ie7 .technologies li[class] span.after,
+.ie7 .technologies li span.before {
+    display: none;
+}
+
+.ie6 .technologies li.hasclass span.before {
+    display: inline;
+}
+
+.ie7 .technologies li[class] span.before {
+    display: inline;
+}
+
+.ie6 .technologies li.last span.after,
+.ie6 .technologies li.last span.before,
+.ie7 .technologies li.last span.after,
+.ie7 .technologies li.last span.before {
+    display: none;
+}
+
+.ie6 .technologies li.last {
+    font-size: 18px;
+}
+
+.ie6 #top h1 {
+    width: 980px;
+}
+
+.ie6 #content {
+    width: 980px;
+}
+
+.ie6 #content div.column-right {
+    zoom: 1;
+}
+
+.ie6 #portfolio ul.portfolio,
+.ie6 #portfolio ul.portfolio li {
+    overflow: hidden;
+    zoom: 1;
+}
+
+.ie6 #portfolio ul.portfolio li {
+    display: inline;
+}
+
+.ie6 body.loading .portfolio,
+.ie7 body.loading .portfolio {
+    background-image: url(../images/loading.gif);
+}

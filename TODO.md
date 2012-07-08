@@ -12,7 +12,7 @@
 * ~~make it working with disabled JS~~
 * ~~add loading indicator in preview~~
 * ~~validate js in jslint~~
-* check in all browsers
+* ~~check in all browsers~~
 * ~~add accessibility improvements~~
 * ~~add microformats~~
 * add 404 page

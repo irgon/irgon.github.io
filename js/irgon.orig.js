@@ -1,23 +1,23 @@
 /*jslint browser: true, white: true */
 /*properties
-    '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12',
-    BACKCODES, CODES, MONTHS, TECH, addClass, ajax, append, arrowsContainer,
-    attr, bind, call, charCode, cite, click, cookie, css, currentLanguage,
-    currentPost, currentUrl, data, dataType, date, description, empty, en,
-    'en-US', fadeIn, fadeOut, fetchPost, find, fitText, hasOwnProperty, hash,
-    height, hide, href, html, id, imgPreview, indexOf, init, is, js, keyCode,
-    keypress, language, list, listContainer, location, log, map, match, mysql,
-    navigator, on, online, parent, php, pl, 'pl-PL', postCache, postContainer,
-    preventDefault, preview, ready, removeClass, replace, resize,
-    setCurrentLanguage, show, showList, showNextPost, showPost, showPreviousPost,
-    sliderContainer, split, success, technologies, title, toLowerCase, translate,
-    url, userLanguage, watchUrl, width, xhtml
+    '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', 
+    Animation, BACKCODES, CODES, MONTHS, MozAnimation, MsAnimation, OAnimation, 
+    TECH, WebkitAnimation, addClass, ajax, append, arrowsContainer, attr, bind, 
+    body, browser, call, charCode, cite, click, cookie, css, currentLanguage, 
+    currentPost, currentUrl, data, dataType, date, description, empty, en, 
+    'en-US', fadeIn, fadeOut, fetchPost, filter, find, fitText, hasOwnProperty, 
+    hash, height, hide, href, html, id, imgPreview, inArray, init, is, js, 
+    keyCode, language, list, listContainer, location, map, match, mysql, 
+    navigator, next, on, online, opera, parent, php, pl, 'pl-PL', postCache, 
+    postContainer, preventDefault, preview, ready, removeClass, replace, resize, 
+    setCurrentLanguage, show, showList, showNextPost, showPost, showPreviousPost, 
+    sliderContainer, sliderJsFallback, split, style, success, technologies, 
+    title, toLowerCase, translate, url, userLanguage, watchUrl, width, xhtml
+*/
+/*globals
+    jQuery
 */
 
-
-
-
-var jQuery = typeof(jQuery) === 'undefined' ? null : jQuery;
 
 (function($) {
 
@@ -136,7 +136,7 @@ var jQuery = typeof(jQuery) === 'undefined' ? null : jQuery;
                 e.preventDefault();
                 self.showNextPost();
             });
-            $(document).bind(($.browser.webkit ? 'keydown' : 'keypress'), function(e) {
+            $(document).bind(($.browser.opera ? 'keypress' : 'keydown'), function(e) {
                 var lastPost;
                 if(e.keyCode === 117 || e.charCode === 117) {
                     e.preventDefault();
@@ -175,7 +175,7 @@ var jQuery = typeof(jQuery) === 'undefined' ? null : jQuery;
                 var urlId = window.location.hash.replace(/^#!\//, '').replace(/\/?$/, '');
                 if(self.currentUrl !== urlId) {
                     self.currentUrl = urlId;
-                    if(self.list.indexOf(urlId) > -1) {
+                    if($.inArray(urlId, self.list) > -1) {
                         self.fetchPost(urlId);
                     } else {
                         if(!window.location.href.match(/[0-9]{4}\/[0-9]{2}\/[0-9]{2}/)) {
@@ -196,13 +196,13 @@ var jQuery = typeof(jQuery) === 'undefined' ? null : jQuery;
             window.location.href = '/#!/';
         },
         showPreviousPost: function() {
-            var previousPostId = this.list[this.list.indexOf(this.currentPost) - 1];
+            var previousPostId = this.list[$.inArray(this.currentPost, this.list) - 1];
             if(previousPostId) {
                 this.fetchPost(previousPostId);
             }
         },
         showNextPost: function() {
-            var nextPostId = this.list[this.list.indexOf(this.currentPost) + 1];
+            var nextPostId = this.list[$.inArray(this.currentPost, this.list) + 1];
             if(nextPostId) {
                 this.fetchPost(nextPostId);
             }
@@ -270,6 +270,19 @@ var jQuery = typeof(jQuery) === 'undefined' ? null : jQuery;
             $('#content').addClass('view-item').removeClass('view-list');
             this.postContainer.show();
             this.listContainer.hide();
+        },
+        sliderJsFallback: function() {
+            var self = this;
+            this.sliderContainer.find('li').css('opacity', 1).hide().filter(':first').show();
+            setInterval(function() {
+                var visible = self.sliderContainer.find('li:visible');
+                visible.fadeOut(1000);
+                if(visible.next().is('li')) {
+                    visible.next().fadeIn();
+                } else {
+                    visible.parent().find(':first').fadeIn(1000);
+                }
+            }, 5000);
         }
     };
 
@@ -277,6 +290,16 @@ var jQuery = typeof(jQuery) === 'undefined' ? null : jQuery;
         $('body').removeClass('no-js');
         Translator.init();
         Portfolio.init();
+
+        if(typeof(document.body.style.MozAnimation) === 'undefined' && 
+           typeof(document.body.style.WebkitAnimation) === 'undefined' && 
+           typeof(document.body.style.OAnimation) === 'undefined' && 
+           typeof(document.body.style.MsAnimation) === 'undefined' && 
+           typeof(document.body.style.Animation) === 'undefined') {
+            $('body').addClass('no-anim');
+            Portfolio.sliderJsFallback();
+        }
+
         $('#top h1 a').fitText(0.433);
     });
 
