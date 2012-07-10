@@ -15,7 +15,7 @@
 * ~~check in all browsers~~
 * ~~add accessibility improvements~~
 * ~~add microformats~~
-* add 404 page
+* ~~add 404 page~~
 * ~~fix loading images~~
 * ~~switch from images to fonts where possible (logo, arrows)~~
 * ~~minify js and css~~

@@ -729,6 +729,12 @@ html[lang="pl-PL"] .arrows cite {
     animation-delay: 20s;
     z-index: 1;
 }
+/* 404 */
+#e404 p {
+    font-size: 90px;
+    line-height: normal;
+    text-align: center;
+}
 
 /* Responsive */
 @media only screen and (max-width : 960px) {
