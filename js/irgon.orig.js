@@ -140,7 +140,7 @@
             });
             $(document).bind(($.browser.opera ? 'keypress' : 'keydown'), function(e) {
                 var lastPost;
-                if(e.keyCode === 117 || e.charCode === 117) {
+                if(e.keyCode === 117 || e.charCode === 117 || e.keyCode === 85 || e.charCode === 85) {
                     e.preventDefault();
                     window.location.href = 'https://github.com/irgon/irgon.github.com/';
                 }
