@@ -1,0 +1,20 @@
+{
+    "id": "wordwatch",
+    "title": "WordWatch",
+    "cite": "Get more bang for your PPC Buck",
+    "description": {
+        "en": "WordWatch is a cloud-based app that manages AdWords automatically.",
+        "pl": "WordWatch to aplikacja zarządzająca kampaniami AdWords."
+    },
+    "url": "http://www.wordwatch.com/",
+    "technologies": {
+        "xhtml": 1.1,
+        "css": 2.1,
+        "js": false,
+        "ruby": 1.8,
+        "mysql": 5.3
+    },
+    "preview": false,
+    "online": true,
+    "date": "2011-04-17"
+}

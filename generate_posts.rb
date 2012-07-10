@@ -6,7 +6,9 @@ TECH = {
     'css'   => ['CSS', 'Cascading Style Sheets'],
     'js'    => ['JS', 'JavaScript'],
     'php'   => ['PHP', 'PHP: Hypertext Preprocessor'],
-    'mysql' => ['MySQL']
+    'mysql' => ['MySQL'],
+    'ruby'  => ['Ruby'],
+    'rails' => ['RoR', 'Ruby on Rails']
 }
 
 MONTHS = {

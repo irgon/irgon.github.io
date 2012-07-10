@@ -10,9 +10,10 @@
     keyCode, language, list, listContainer, location, map, match, mysql, 
     navigator, next, on, online, opera, parent, php, pl, 'pl-PL', postCache, 
     postContainer, preventDefault, preview, ready, removeClass, replace, resize, 
-    setCurrentLanguage, show, showList, showNextPost, showPost, showPreviousPost, 
-    sliderContainer, sliderJsFallback, split, style, success, technologies, 
-    title, toLowerCase, translate, url, userLanguage, watchUrl, width, xhtml
+    ruby, setCurrentLanguage, show, showList, showNextPost, showPost, 
+    showPreviousPost, sliderContainer, sliderJsFallback, split, style, success, 
+    technologies, title, toLowerCase, translate, url, userLanguage, watchUrl, 
+    width, xhtml
 */
 /*globals
     jQuery
@@ -76,7 +77,8 @@
             'css':   ['CSS', 'Cascading Style Sheets'],
             'js':    ['JS', 'JavaScript'],
             'php':   ['PHP', 'PHP: Hypertext Preprocessor'],
-            'mysql': ['MySQL']
+            'mysql': ['MySQL'],
+            'ruby':  ['Ruby']
         },
         MONTHS: {
             '01': 'Jan',
@@ -248,7 +250,7 @@
             for(tech in postData.technologies) {
                 if(postData.technologies.hasOwnProperty(tech)) {
                     technologyVersion = postData.technologies[tech];
-                    technologiesContainer.append($('<li><abbr title="' + this.TECH[tech][1] + '">' + this.TECH[tech][0] + (technologyVersion ? ' ' + technologyVersion : '') + '</abbr></li>'));
+                    technologiesContainer.append($('<li>' + (this.TECH[tech][1] ? '<abbr title="' + this.TECH[tech][1] + '">' : '') + this.TECH[tech][0] + (technologyVersion ? ' ' + technologyVersion : '') + (this.TECH[tech][1] ? '</abbr>' : '') + '</li>'));
                 }
             }
             $('li:last', technologiesContainer).addClass('last');
