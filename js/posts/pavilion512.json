@@ -1,0 +1,18 @@
+{
+    "id": "pavilion512",
+    "title": "Pawilon 512",
+    "cite": "Miejsce odległe",
+    "description": {
+        "en": "Build of clay and concrete pavilion with a length of 85m and a width of 5m is an exhibition and workshop space, created for artistic activities.",
+        "pl": "Zbudowany z gliny i betonu pawilon o długości 85 m i szerokości 5 m to przestrzeń wystawienniczo-warsztatowa, stworzona z myślą o działaniach artystycznych."
+    },
+    "url": "http://512.kopernik.org.pl/",
+    "technologies": {
+        "html": 5,
+        "css": 3,
+        "js": true
+    },
+    "preview": true,
+    "online": true,
+    "date": "2012-07-24"
+}
