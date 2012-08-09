@@ -14,7 +14,7 @@
         "php": "5.3",
         "mysql": "5.1"
     },
-    "preview": true,
+    "preview": false,
     "online": true,
     "promoted": true,
     "date": "2011-08-25"
