@@ -1,0 +1,18 @@
+{
+    "id": "colgate",
+    "title": "Colgate",
+    "cite": "Uśmiech Rodziny",
+    "description": {
+        "en": "Colgate promo campaign.",
+        "pl": "Akcja promocyjna Colgate."
+    },
+    "url": "http://usmiechdlarodziny.pl/",
+    "technologies": {
+        "html": 5,
+        "css": 3,
+        "js": true
+    },
+    "preview": false,
+    "online": true,
+    "date": "2015-02-28"
+}

@@ -79,3 +79,4 @@ end
 slider += "                        </ul>"
 
 File.open(File.join('_includes', 'slider.html'), 'w') { |file| file.write(slider) }
+puts "Done!"
